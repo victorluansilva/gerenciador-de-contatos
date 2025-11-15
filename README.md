@@ -19,3 +19,5 @@ Gerenciador de contatos que permite importar e exportar contatos *.vcf
 [![Joao Pedro](https://img.shields.io/badge/Joao_Pedro-SENAI-0E3F8F?style=flat&logo=github&logoColor=white&color=0E3F8F)](https://github.com/joaopedro86-jpc)
 
 [![Marco Túlio Paiva Nunes de Souza](https://img.shields.io/badge/Marco_Souza-SENAI-0E3F8F?style=flat&logo=github&logoColor=white&color=0E3F8F)](https://github.com/marcodeum)
+
+[![Pablo Santos](https://img.shields.io/badge/Pablo_Penha-SENAI-0E3F8F?style=flat&logo=github&logoColor=white&color=0E3F8F)](https://github.com/PabloJunioPenhaSantos) 
