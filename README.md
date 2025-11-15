@@ -6,6 +6,8 @@ Gerenciador de contatos que permite importar e exportar contatos *.vcf
 
 [![Victor Luan Silva](https://img.shields.io/badge/Victor_Silva-SENAI-0E3F8F?style=flat&logo=github&logoColor=white&color=0E3F8F)](https://github.com/victorluansilva)
 
+[![Leonardo Keirrison](https://img.shields.io/badge/Leonardo_Cruz-SENAI-0E3F8F?style=flat&logo=github&logoColor=white&color=0E3F8F)](https://github.com/leokgoncalvescruz)
+
 [![Pedro Pompeu](https://img.shields.io/badge/Pedro_Pompeu-SENAI-0E3F8F?style=flat&logo=github&logoColor=white&color=0E3F8F)](https://github.com/pedrohpompeu)
 
 [![Paloma Stéfane](https://img.shields.io/badge/Paloma_Stéfane-SENAI-0E3F8F?style=flat&logo=github&logoColor=white&color=0E3F8F)](https://github.com/PalomaStefane)
@@ -13,3 +15,11 @@ Gerenciador de contatos que permite importar e exportar contatos *.vcf
 [![Guilherme Cassiano](https://img.shields.io/badge/gulhrmcassiano-SENAI-0E3F8F?style=flat&logo=github&logoColor=white&color=0E3F8F)](https://github.com/gulhrmcassiano)
 
 [![Marcelo Martins](https://img.shields.io/badge/Marcelo_Santos-SENAI-0E3F8F?style=flat&logo=github&logoColor=white&color=0E3F8F)](https://github.com/Celotrix)
+
+[![Leonardo Augusto Dias Cardoso](https://img.shields.io/badge/Leonardo_Augusto-SENAI-0E3F8F?style=flat&logo=github&logoColor=white&color=0E3F8F)](https://github.com/Leonardo2745)
+
+[![Joao Pedro](https://img.shields.io/badge/Joao_Pedro-SENAI-0E3F8F?style=flat&logo=github&logoColor=white&color=0E3F8F)](https://github.com/joaopedro86-jpc)
+
+[![Marco Túlio Paiva Nunes de Souza](https://img.shields.io/badge/Marco_Souza-SENAI-0E3F8F?style=flat&logo=github&logoColor=white&color=0E3F8F)](https://github.com/marcodeum)
+
+[![Pablo Santos](https://img.shields.io/badge/Pablo_Penha-SENAI-0E3F8F?style=flat&logo=github&logoColor=white&color=0E3F8F)](https://github.com/PabloJunioPenhaSantos) 
