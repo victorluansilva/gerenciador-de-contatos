@@ -4,7 +4,20 @@ Gerenciador de contatos que permite importar e exportar contatos *.vcf
 
 ## Equipe de desenvolvimento
 
+[![Victor Luan Silva](https://img.shields.io/badge/Victor_Silva-SENAI-0E3F8F?style=flat&logo=github&logoColor=white&color=0E3F8F)](https://github.com/victorluansilva)
 
+[![Leonardo Keirrison](https://img.shields.io/badge/Leonardo_Cruz-SENAI-0E3F8F?style=flat&logo=github&logoColor=white&color=0E3F8F)](https://github.com/leokgoncalvescruz)
+
+[![Pedro Pompeu](https://img.shields.io/badge/Pedro_Pompeu-SENAI-0E3F8F?style=flat&logo=github&logoColor=white&color=0E3F8F)](https://github.com/pedrohpompeu)
+
+[![Paloma Stéfane](https://img.shields.io/badge/Paloma_Stéfane-SENAI-0E3F8F?style=flat&logo=github&logoColor=white&color=0E3F8F)](https://github.com/PalomaStefane)
+
+[![Guilherme Cassiano](https://img.shields.io/badge/gulhrmcassiano-SENAI-0E3F8F?style=flat&logo=github&logoColor=white&color=0E3F8F)](https://github.com/gulhrmcassiano)
+
+[![Leonardo Augusto Dias Cardoso](https://img.shields.io/badge/Leonardo_Augusto-SENAI-0E3F8F?style=flat&logo=github&logoColor=white&color=0E3F8F)](https://github.com/Leonardo2745)
+
+[![Joao Pedro](https://img.shields.io/badge/Joao_Pedro-SENAI-0E3F8F?style=flat&logo=github&logoColor=white&color=0E3F8F)](https://github.com/joaopedro86-jpc)
+
+[![Marco Túlio Paiva Nunes de Souza](https://img.shields.io/badge/Marco_Souza-SENAI-0E3F8F?style=flat&logo=github&logoColor=white&color=0E3F8F)](https://github.com/marcodeum)
 
 [![Samuel Lucas Santos Fernandes](https://img.shields.io/badge/Samuel_Fernandes-SENAI-0E3F8F?style=flat&logo=github&logoColor=white&color=0E3F8F)](https://github.com/samueluca)
-[![Victor Luan Silva](https://img.shields.io/badge/Victor_Silva-SENAI-0E3F8F?style=flat&logo=github&logoColor=white&color=0E3F8F)](https://github.com/victorluansilva)
