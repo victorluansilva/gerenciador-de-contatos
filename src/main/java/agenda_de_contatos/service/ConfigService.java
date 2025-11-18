@@ -10,6 +10,9 @@ import java.util.regex.Pattern;
 
 public class ConfigService {
 
+    public static final String COLOR_YELLOW_TEXT = "#E6E600" ;
+    public static final String COLOR_YELLOW_BUTTON = "#E6E600";
+    public static final String COLOR_BG_YELLOW = "#E6E600";
     private final String CONFIG_FILE = "config.properties";
     private Properties props = new Properties();
 
