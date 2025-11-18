@@ -1,0 +1,248 @@
+.root {
+    -background-base: #3C3F41;
+    -text-color: #E4E6EB;
+    -button-color: #4A89F3;
+    -button-text-color: white;
+    -sidebar-background: #2B2B2B;
+    -sidebar-text-color: #B0B3B8;
+    -sidebar-hover-background: #3A3B3C;
+    -sidebar-hover-text-color: #FFFFFF;
+    -table-background: #2B2B2B;
+    -table-header-background: #3A3B3C;
+    -table-header-text-color: white;
+    -table-cell-text-color: #E4E6EB;
+    -table-row-odd-background: #3C3F41;
+    -table-row-even-background: #373A3C;
+    -table-row-hover-background: #4A4A4A;
+    -input-background: #4A4A4A;
+    -input-text-color: white;
+    -input-border-color: #5A5A5A;
+    -input-focus-border-color: -button-color; /* CORRIGIDO */
+
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-base: -background-base; /* CORRIGIDO */
+}
+
+.sidebar {
+    -fx-background-color: -sidebar-background; /* CORRIGIDO */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0, 0, 3);
+}
+
+.sidebar-title {
+    -fx-text-fill: -text-color; /* CORRIGIDO */
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.sidebar-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: -sidebar-text-color; /* CORRIGIDO */
+    -fx-font-size: 16px;
+    -fx-pref-width: 200px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 10px 15px;
+    -fx-background-radius: 8px;
+}
+
+.sidebar-button:hover {
+    -fx-background-color: -sidebar-hover-background; /* CORRIGIDO */
+    -fx-text-fill: -sidebar-hover-text-color; /* CORRIGIDO */
+    -fx-cursor: hand;
+}
+
+.sidebar-button .icon {
+    -fx-fill: -sidebar-text-color; /* CORRIGIDO */
+}
+
+.sidebar-button:hover .icon {
+    -fx-fill: -sidebar-hover-text-color; /* CORRIGIDO */
+}
+
+.content-pane {
+    -fx-background-color: -background-base; /* CORRIGIDO */
+}
+
+.label {
+    -fx-text-fill: -text-color; /* CORRIGIDO */
+}
+
+.button {
+    -fx-background-color: -button-color; /* CORRIGIDO */
+    -fx-text-fill: -button-text-color; /* CORRIGIDO */
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+    -fx-padding: 8px 15px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: derive(-button-color, -15%); /* CORRIGIDO */
+}
+
+.table-cell .button {
+    -fx-padding: 5px 10px;
+    -fx-font-size: 12px;
+}
+
+.table-view {
+    -fx-background-color: -table-background; /* CORRIGIDO */
+    -fx-border-color: -input-border-color; /* CORRIGIDO */
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: -table-header-background; /* CORRIGIDO */
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-padding: 10px;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: -table-header-text-color; /* CORRIGIDO */
+    -fx-font-weight: bold;
+}
+
+.table-view .table-cell {
+    -fx-text-fill: -table-cell-text-color; /* CORRIGIDO */
+    -fx-border-color: transparent;
+    -fx-padding: 12px;
+}
+
+.table-view .table-row-cell:odd {
+    -fx-background-color: -table-row-odd-background; /* CORRIGIDO */
+}
+
+.table-view .table-row-cell:even {
+    -fx-background-color: -table-row-even-background; /* CORRIGIDO */
+}
+
+.table-view .table-row-cell:hover {
+    -fx-background-color: -table-row-hover-background; /* CORRIGIDO */
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-border-width: 0;
+}
+.table-view .table-cell {
+    -fx-border-width: 0;
+}
+.table-view .column-resize-line {
+    -fx-background-color: -input-focus-border-color; /* CORRIGIDO */
+}
+
+.text-field, .date-picker, .choice-box {
+    -fx-background-color: -input-background; /* CORRIGIDO */
+    -fx-text-fill: -input-text-color; /* CORRIGIDO */
+    -fx-border-color: -input-border-color; /* CORRIGIDO */
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-font-size: 14px;
+    -fx-padding: 8px;
+}
+
+.choice-box .label {
+    -fx-text-fill: -input-text-color; /* CORRIGIDO */
+}
+.choice-box .context-menu {
+     -fx-background-color: -input-background; /* CORRIGIDO */
+     -fx-border-color: -input-border-color; /* CORRIGIDO */
+}
+.choice-box .menu-item:focused {
+     -fx-background-color: -input-focus-border-color; /* CORRIGIDO */
+}
+.choice-box .menu-item > .label {
+    -fx-text-fill: -input-text-color; /* CORRIGIDO */
+}
+.choice-box .menu-item:focused > .label {
+    -fx-text-fill: white;
+}
+.choice-box .arrow {
+    -fx-background-color: -sidebar-text-color; /* CORRIGIDO */
+}
+
+
+.text-field:focused {
+    -fx-border-color: -input-focus-border-color; /* CORRIGIDO */
+    -fx-border-width: 2px;
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: -button-color; /* CORRIGIDO */
+}
+.date-picker .text-field {
+     -fx-background-color: -input-background; /* CORRIGIDO */
+     -fx-text-fill: -input-text-color; /* CORRIGIDO */
+     -fx-border-color: -input-border-color; /* CORRIGIDO */
+}
+.date-picker .date-picker-popup {
+    -fx-border-color: -input-border-color; /* CORRIGIDO */
+}
+.date-picker .date-picker-popup .month-year-pane {
+    -fx-background-color: -table-header-background; /* CORRIGIDO */
+}
+.date-picker .date-picker-popup .day-cell:hover {
+     -fx-background-color: -table-row-hover-background; /* CORRIGIDO */
+}
+.date-picker .date-picker-popup .day-cell.today {
+     -fx-border-color: -button-color; /* CORRIGIDO */
+}
+.date-picker .date-picker-popup .day-cell:selected {
+     -fx-background-color: -button-color; /* CORRIGIDO */
+     -fx-text-fill: white;
+}
+
+
+.status-bar {
+    -fx-border-color: -input-border-color; /* CORRIGIDO */
+    -fx-border-width: 1 0 0 0;
+    -fx-padding: 10 0 0 0;
+}
+
+.status-bar .label {
+    -fx-font-style: italic;
+    -fx-text-fill: -sidebar-text-color; /* CORRIGIDO */
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: -sidebar-background; /* CORRIGIDO */
+}
+.tab-pane .tab {
+    -fx-background-color: -input-background; /* CORRIGIDO */
+    -fx-background-insets: 0 1 0 1;
+    -fx-background-radius: 5 5 0 0;
+}
+.tab-pane .tab:selected {
+    -fx-background-color: -background-base; /* CORRIGIDO */
+    -fx-border-color: -input-border-color; /* CORRIGIDO */
+    -fx-border-width: 1 1 0 1;
+    -fx-border-radius: 5 5 0 0;
+}
+.tab-pane .tab .tab-label {
+    -fx-text-fill: -sidebar-text-color; /* CORRIGIDO */
+}
+.tab-pane .tab:selected .tab-label {
+    -fx-text-fill: -text-color; /* CORRIGIDO */
+}
+.tab-pane .tab-content-area {
+    -fx-background-color: -background-base; /* CORRIGIDO */
+    -fx-border-color: -input-border-color; /* CORRIGIDO */
+    -fx-border-width: 0 1 1 1;
+}
+
+.theme-button {
+    -fx-min-width: 40px;
+    -fx-min-height: 40px;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-width: 2px;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+}
+.selected-theme-button {
+    -fx-border-color: #f0ad4e;
+    -fx-effect: dropshadow(gaussian, rgba(240,173,78,0.5), 5, 0, 0, 1);
+}
