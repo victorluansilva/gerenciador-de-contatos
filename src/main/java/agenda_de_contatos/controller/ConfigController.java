@@ -35,6 +35,13 @@ public class ConfigController {
     @FXML private Button btnBgDark;
     @FXML private Button btnBgBlue;
 
+    @FXML private Button btnBgBlack;
+    @FXML private Button btnFontBlack2;
+    @FXML private Button btnButtonBlack2;
+    @FXML private Button btnSidebarBlack;
+
+
+
     @FXML private Button btnSidebarLight;
     @FXML private Button btnSidebarDark;
     @FXML private Button btnSidebarBlue;
@@ -122,18 +129,23 @@ public class ConfigController {
         fontButtons.put(ConfigService.COLOR_WHITE, btnFontWhite);
         fontButtons.put(ConfigService.COLOR_BLACK, btnFontBlack);
         fontButtons.put(ConfigService.COLOR_BLUE_TEXT, btnFontBlue);
+        fontButtons.put(ConfigService.COLOR_BLACK_TEXT, btnFontBlack2);
+
 
         buttonButtons.put(ConfigService.COLOR_WHITE, btnButtonWhite);
         buttonButtons.put(ConfigService.COLOR_DEFAULT_BLUE_BUTTON, btnButtonBlue);
         buttonButtons.put(ConfigService.COLOR_ORANGE_BUTTON, btnButtonOrange);
+        buttonButtons.put(ConfigService.COLOR_BLACK_BUTTON, btnButtonBlack2);
 
         backgroundButtons.put(ConfigService.COLOR_BG_LIGHT, btnBgLight);
         backgroundButtons.put(ConfigService.COLOR_BG_DARK, btnBgDark);
         backgroundButtons.put(ConfigService.COLOR_BG_BLUE, btnBgBlue);
+        backgroundButtons.put(ConfigService.COLOR_BG_BLACK, btnBgBlack);
 
         sidebarButtons.put(ConfigService.COLOR_BG_LIGHT, btnSidebarLight);
         sidebarButtons.put(ConfigService.COLOR_BG_DARK, btnSidebarDark);
         sidebarButtons.put(ConfigService.COLOR_BG_BLUE, btnSidebarBlue);
+        sidebarButtons.put(ConfigService.COLOR_BG_BLACK, btnSidebarBlack);
     }
 
     private void loadAndApplyCurrentThemeSelection() {
