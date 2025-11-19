@@ -10,6 +10,9 @@ import java.util.regex.Pattern;
 
 public class ConfigService {
 
+    public static final String COLOR_BLACK_TEXT = "000000";
+    public static final String COLOR_BLACK_BUTTON = "000000";
+    public static final String COLOR_BG_BLACK = "000000";
     private final String CONFIG_FILE = "config.properties";
     private Properties props = new Properties();
 
