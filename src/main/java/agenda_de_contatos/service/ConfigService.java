@@ -22,6 +22,13 @@ public class ConfigService {
     public static final String COLOR_BG_DARK = "#3C3F41";
     public static final String COLOR_BG_BLUE = "#2C3E50";
     public static final String COLOR_SIDEBAR_DEFAULT = "#34495E";
+    public static final String COLOR_TXT_BROWN= "#895129";
+    public static final String COLOR_BTN_BROWN = "#895129";
+    public static final String COLOR_BACKGROND_BROWN = "#895129";
+    public static final String COLOR_SIDEBAR_BROWN = "#895129";
+
+
+
 
     public ConfigService() {
         loadConfig();
