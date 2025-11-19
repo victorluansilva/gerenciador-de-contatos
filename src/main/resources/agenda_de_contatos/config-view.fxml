@@ -37,6 +37,7 @@
                                         <Button fx:id="btnFontBlack" styleClass="theme-button" onAction="#handleThemeChange" textFill="white" style="-fx-background-color: #333333;" userData="font:#333333"/>
                                         <Button fx:id="btnFontBlue" styleClass="theme-button" onAction="#handleThemeChange" textFill="black" style="-fx-background-color: #ECF0F1;" userData="font:#ECF0F1"/>
                                         <Button fx:id="btnFontBlack2" styleClass="theme-button" onAction="#handleThemeChange" textFill="black" style="-fx-background-color: #000000;" userData="font:#000000"/>
+                                        <Button fx:id="btnFontPink" styleClass="theme-button" onAction="#handleThemeChange" textFill="black" style="-fx-background-color: #FFC0CB;" userData="font:#FFC0CB"/>
                                     </HBox>
                                     <HBox alignment="CENTER_LEFT" spacing="15.0">
                                         <Label text="Cor dos Botões:" minWidth="120"/>
@@ -44,6 +45,7 @@
                                         <Button fx:id="btnButtonBlue" styleClass="theme-button" onAction="#handleThemeChange" textFill="white" style="-fx-background-color: #4A89F3;" userData="button:#4A89F3"/>
                                         <Button fx:id="btnButtonOrange" styleClass="theme-button" onAction="#handleThemeChange" textFill="white" style="-fx-background-color: #f0ad4e;" userData="button:#f0ad4e"/>
                                         <Button fx:id="btnButtonBlack2" styleClass="theme-button" onAction="#handleThemeChange" textFill="white" style="-fx-background-color: #000000;" userData="button:#000000"/>
+                                        <Button fx:id="btnButtonPink" styleClass="theme-button" onAction="#handleThemeChange" textFill="white" style="-fx-background-color: #FFC0CB;" userData="button:#FFC0CB"/>
                                     </HBox>
                                     <HBox alignment="CENTER_LEFT" spacing="15.0">
                                         <Label text="Cor de Fundo:" minWidth="120"/>
@@ -51,6 +53,7 @@
                                         <Button fx:id="btnBgDark" styleClass="theme-button" onAction="#handleThemeChange" textFill="white" style="-fx-background-color: #3C3F41;" userData="background:#3C3F41"/>
                                         <Button fx:id="btnBgBlue" styleClass="theme-button" onAction="#handleThemeChange" textFill="white" style="-fx-background-color: #2C3E50;" userData="background:#2C3E50"/>
                                         <Button fx:id="btnBgBlack" styleClass="theme-button" onAction="#handleThemeChange" textFill="white" style="-fx-background-color: #000000;" userData="background:#000000"/>
+                                        <Button fx:id="btnBgPink" styleClass="theme-button" onAction="#handleThemeChange" textFill="white" style="-fx-background-color: #FFC0CB;" userData="background:#FFC0CB"/>
                                     </HBox>
                                     <HBox alignment="CENTER_LEFT" spacing="15.0">
                                         <Label text="Cor Barra Lateral:" minWidth="120"/>
@@ -58,6 +61,7 @@
                                         <Button fx:id="btnSidebarDark" styleClass="theme-button" onAction="#handleThemeChange" textFill="white" style="-fx-background-color: #3C3F41;" userData="sidebar:#3C3F41"/>
                                         <Button fx:id="btnSidebarBlue" styleClass="theme-button" onAction="#handleThemeChange" textFill="white" style="-fx-background-color: #2C3E50;" userData="sidebar:#2C3E50"/>
                                         <Button fx:id="btnSidebarBlack" styleClass="theme-button" onAction="#handleThemeChange" textFill="white" style="-fx-background-color: #000000;" userData="sidebar:#000000"/>
+                                        <Button fx:id="btnSidebarPink" styleClass="theme-button" onAction="#handleThemeChange" textFill="white" style="-fx-background-color: #FFC0CB;" userData="sidebar:#FFC0CB"/>
                                     </HBox>
 
                                 </VBox>
