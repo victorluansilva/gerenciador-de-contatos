@@ -15,7 +15,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ConfigController {
-
+//iniciar botoes//
     @FXML private ChoiceBox<String> storageChoiceBox;
     @FXML private TextField hostField;
     @FXML private TextField userField;
@@ -28,16 +28,23 @@ public class ConfigController {
     @FXML private Button btnFontWhite;
     @FXML private Button btnFontBlack;
     @FXML private Button btnFontBlue;
+    @FXML private Button btnFontNubank;
     @FXML private Button btnButtonWhite;
     @FXML private Button btnButtonBlue;
     @FXML private Button btnButtonOrange;
+    @FXML private Button btnButtonNubank;
     @FXML private Button btnBgLight;
     @FXML private Button btnBgDark;
     @FXML private Button btnBgBlue;
+    @FXML private Button btnBgNubank;
+
+
 
     @FXML private Button btnSidebarLight;
     @FXML private Button btnSidebarDark;
     @FXML private Button btnSidebarBlue;
+
+
 
     @FXML private Label configStatusLabel;
     @FXML private TabPane tabPane;
@@ -122,14 +129,19 @@ public class ConfigController {
         fontButtons.put(ConfigService.COLOR_WHITE, btnFontWhite);
         fontButtons.put(ConfigService.COLOR_BLACK, btnFontBlack);
         fontButtons.put(ConfigService.COLOR_BLUE_TEXT, btnFontBlue);
+        fontButtons.put(ConfigService.COLOR_NUBANK_TEXT, btnFontNubank);
+
 
         buttonButtons.put(ConfigService.COLOR_WHITE, btnButtonWhite);
         buttonButtons.put(ConfigService.COLOR_DEFAULT_BLUE_BUTTON, btnButtonBlue);
         buttonButtons.put(ConfigService.COLOR_ORANGE_BUTTON, btnButtonOrange);
+        buttonButtons.put(ConfigService.COLOR_NUBANK_BUTTON, btnButtonNubank);
 
+//
         backgroundButtons.put(ConfigService.COLOR_BG_LIGHT, btnBgLight);
         backgroundButtons.put(ConfigService.COLOR_BG_DARK, btnBgDark);
         backgroundButtons.put(ConfigService.COLOR_BG_BLUE, btnBgBlue);
+        backgroundButtons.put(ConfigService.COLOR_BG_NUBANK, btnBgNubank);
 
         sidebarButtons.put(ConfigService.COLOR_BG_LIGHT, btnSidebarLight);
         sidebarButtons.put(ConfigService.COLOR_BG_DARK, btnSidebarDark);
