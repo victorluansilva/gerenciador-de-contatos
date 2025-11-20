@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="agenda_de_contatos.controller.ConfigController">
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="agenda_de_contatos.controller.ConfigController">
     <children>
-        <VBox alignment="TOP_CENTER" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <VBox alignment="TOP_CENTER" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+              AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <padding>
-                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
             </padding>
             <children>
 
                 <Label text="Configurações">
                     <font>
-                        <Font name="System Bold" size="18.0" />
+                        <Font name="System Bold" size="18.0"/>
                     </font>
                     <VBox.margin>
-                        <Insets bottom="10.0" />
+                        <Insets bottom="10.0"/>
                     </VBox.margin>
                 </Label>
 
@@ -26,12 +28,82 @@
                     <tabs>
                         <Tab text="Tema">
                             <content>
-                                <VBox spacing="20.0" alignment="TOP_LEFT">
+                                <VBox alignment="TOP_LEFT" spacing="20.0">
                                     <padding>
-                                        <Insets top="20.0" left="10.0" right="10.0" bottom="10.0"/>
+                                        <Insets bottom="10.0" left="10.0" right="10.0" top="20.0"/>
                                     </padding>
 
                                     <HBox alignment="CENTER_LEFT" spacing="15.0">
+                                        <Label minWidth="120" text="Cor da Fonte:"/>
+                                        <Button fx:id="btnFontWhite" onAction="#handleThemeChange"
+                                                style="-fx-background-color: #FFFFFF;" styleClass="theme-button"
+                                                textFill="black" userData="font:#FFFFFF"/>
+                                        <Button fx:id="btnFontBlack" onAction="#handleThemeChange"
+                                                style="-fx-background-color: #333333;" styleClass="theme-button"
+                                                textFill="white" userData="font:#333333"/>
+                                        <Button fx:id="btnFontBlue" onAction="#handleThemeChange"
+                                                style="-fx-background-color: #ECF0F1;" styleClass="theme-button"
+                                                textFill="black" userData="font:#ECF0F1"/>
+                                        <Button fx:id="btnFontPurple" onAction="#handleThemeChange"
+                                                style="-fx-background-color: #8A2BE2;" styleClass="theme-button"
+                                                textFill="Purple" userData="font:#8A2BE2"/>
+                                        <Button fx:id="btnFontMagenta" onAction="#handleThemeChange"
+                                                style="-fx-background-color: #FF00FF;" styleClass="theme-button"
+                                                textFill="Purple" userData="font:#FF00FF"/>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" spacing="15.0">
+                                        <Label minWidth="120" text="Cor dos Botões:"/>
+                                        <Button fx:id="btnButtonWhite" onAction="#handleThemeChange"
+                                                style="-fx-background-color: #FFFFFF;" styleClass="theme-button"
+                                                textFill="black" userData="button:#FFFFFF"/>
+                                        <Button fx:id="btnButtonBlue" onAction="#handleThemeChange"
+                                                style="-fx-background-color: #4A89F3;" styleClass="theme-button"
+                                                textFill="white" userData="button:#4A89F3"/>
+                                        <Button fx:id="btnButtonOrange" onAction="#handleThemeChange"
+                                                style="-fx-background-color: #f0ad4e;" styleClass="theme-button"
+                                                textFill="white" userData="button:#f0ad4e"/>
+                                        <Button fx:id="btnButtonPurple" onAction="#handleThemeChange"
+                                                style="-fx-background-color: #8A2BE2;" styleClass="theme-button"
+                                                textFill="Purple" userData="button:#8A2BE2"/>
+                                        <Button fx:id="btnButtonMagenta" onAction="#handleThemeChange"
+                                                style="-fx-background-color: #FF00FF;" styleClass="theme-button"
+                                                textFill="Purple" userData="button:#FF00FF"/>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" spacing="15.0">
+                                        <Label minWidth="120" text="Cor de Fundo:"/>
+                                        <Button fx:id="btnBgLight" onAction="#handleThemeChange"
+                                                style="-fx-background-color: #F4F4F4;" styleClass="theme-button"
+                                                textFill="black" userData="background:#F4F4F4"/>
+                                        <Button fx:id="btnBgDark" onAction="#handleThemeChange"
+                                                style="-fx-background-color: #3C3F41;" styleClass="theme-button"
+                                                textFill="white" userData="background:#3C3F41"/>
+                                        <Button fx:id="btnBgBlue" onAction="#handleThemeChange"
+                                                style="-fx-background-color: #2C3E50;" styleClass="theme-button"
+                                                textFill="white" userData="background:#2C3E50"/>
+                                        <Button fx:id="btnBgPurple" onAction="#handleThemeChange"
+                                                style="-fx-background-color: #8A2BE2;" styleClass="theme-button"
+                                                textFill="white" userData="background:#8A2BE2"/>
+                                        <Button fx:id="btnBgMagenta" onAction="#handleThemeChange"
+                                                style="-fx-background-color: #FF00FF;" styleClass="theme-button"
+                                                textFill="white" userData="background:#FF00FF"/>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" spacing="15.0">
+                                        <Label minWidth="120" text="Cor Barra Lateral:"/>
+                                        <Button fx:id="btnSidebarLight" onAction="#handleThemeChange"
+                                                style="-fx-background-color: #F4F4F4;" styleClass="theme-button"
+                                                textFill="black" userData="sidebar:#F4F4F4"/>
+                                        <Button fx:id="btnSidebarDark" onAction="#handleThemeChange"
+                                                style="-fx-background-color: #3C3F41;" styleClass="theme-button"
+                                                textFill="white" userData="sidebar:#3C3F41"/>
+                                        <Button fx:id="btnSidebarBlue" onAction="#handleThemeChange"
+                                                style="-fx-background-color: #2C3E50;" styleClass="theme-button"
+                                                textFill="white" userData="sidebar:#2C3E50"/>
+                                        <Button fx:id="btnSidebarPurple" onAction="#handleThemeChange"
+                                                style="-fx-background-color: #8A2BE2;" styleClass="theme-button"
+                                                textFill="white" userData="sidebar:#8A2BE2"/>
+                                        <Button fx:id="btnSidebarMagenta" onAction="#handleThemeChange"
+                                                style="-fx-background-color: #FF00FF;" styleClass="theme-button"
+                                                textFill="white" userData="sidebar:#FF00FF"/>
                                         <Label text="Cor da Fonte:" minWidth="120"/>
                                         <Button fx:id="btnFontWhite" styleClass="theme-button" onAction="#handleThemeChange" textFill="black" style="-fx-background-color: #FFFFFF;" userData="font:#FFFFFF"/>
                                         <Button fx:id="btnFontBlack" styleClass="theme-button" onAction="#handleThemeChange" textFill="white" style="-fx-background-color: #333333;" userData="font:#333333"/>
@@ -92,31 +164,43 @@
                         </Tab>
                         <Tab text="Armazenamento">
                             <content>
-                                <VBox spacing="15.0" alignment="TOP_LEFT">
+                                <VBox alignment="TOP_LEFT" spacing="15.0">
                                     <padding>
-                                        <Insets top="20.0" left="10.0" right="10.0" bottom="10.0"/>
+                                        <Insets bottom="10.0" left="10.0" right="10.0" top="20.0"/>
                                     </padding>
-                                    <GridPane fx:id="gridPane" hgap="10.0" vgap="15.0" maxWidth="600.0">
-                                        <Label text="Modo:" GridPane.rowIndex="0" />
-                                        <ChoiceBox fx:id="storageChoiceBox" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                                    <GridPane fx:id="gridPane" hgap="10.0" maxWidth="600.0" vgap="15.0">
+                                        <Label text="Modo:" GridPane.rowIndex="0"/>
+                                        <ChoiceBox fx:id="storageChoiceBox" prefWidth="250.0" GridPane.columnIndex="1"
+                                                   GridPane.rowIndex="0"/>
 
-                                        <Label fx:id="hostLabel" text="MySQL URL:" GridPane.rowIndex="1" />
-                                        <TextField fx:id="hostField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                        <Label fx:id="hostLabel" text="MySQL URL:" GridPane.rowIndex="1"/>
+                                        <TextField fx:id="hostField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
 
-                                        <Label fx:id="userLabel" text="Usuário:" GridPane.rowIndex="2" />
-                                        <TextField fx:id="userField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                        <Label fx:id="userLabel" text="Usuário:" GridPane.rowIndex="2"/>
+                                        <TextField fx:id="userField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
 
-                                        <Label fx:id="passLabel" text="Senha:" GridPane.rowIndex="3" />
-                                        <PasswordField fx:id="passField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                        <Label fx:id="passLabel" text="Senha:" GridPane.rowIndex="3"/>
+                                        <PasswordField fx:id="passField" GridPane.columnIndex="1"
+                                                       GridPane.rowIndex="3"/>
+                                        <columnConstraints>
+                                            <ColumnConstraints/>
+                                            <ColumnConstraints/>
+                                        </columnConstraints>
+                                        <rowConstraints>
+                                            <RowConstraints/>
+                                            <RowConstraints/>
+                                            <RowConstraints/>
+                                            <RowConstraints/>
+                                        </rowConstraints>
                                     </GridPane>
                                     <HBox alignment="CENTER_LEFT" spacing="10.0">
                                         <children>
-                                            <Button fx:id="testButton" onAction="#handleTestar" text="Testar MySQL" />
-                                            <Button onAction="#handleSalvarStorage" text="Salvar Armazenamento" />
-                                            <Label fx:id="storageStatusLabel" />
+                                            <Button fx:id="testButton" onAction="#handleTestar" text="Testar MySQL"/>
+                                            <Button onAction="#handleSalvarStorage" text="Salvar Armazenamento"/>
+                                            <Label fx:id="storageStatusLabel"/>
                                         </children>
                                         <VBox.margin>
-                                            <Insets top="10.0" />
+                                            <Insets top="10.0"/>
                                         </VBox.margin>
                                     </HBox>
                                 </VBox>
@@ -124,7 +208,7 @@
                         </Tab>
                     </tabs>
                 </TabPane>
-                <Label fx:id="configStatusLabel" />
+                <Label fx:id="configStatusLabel"/>
             </children>
         </VBox>
     </children>

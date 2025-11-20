@@ -26,6 +26,9 @@ public class ConfigService {
     public static final String COLOR_WHITE = "#FFFFFF";
     public static final String COLOR_BLACK = "#333333";
     public static final String COLOR_BLUE_TEXT = "#ECF0F1";
+    public static final String COLOR_PURPLE_TEXT = "#8A2BE2";
+    public static final String COLOR_MAGENTA_TEXT = "#FF00FF";
+
     public static final String COLOR_GREEN_TEXT = "#2CFF05";
     public static final String COLOR_DEFAULT_BLUE_BUTTON = "#4A89F3";
     public static final String COLOR_ORANGE_BUTTON = "#f0ad4e";
@@ -41,12 +44,19 @@ public class ConfigService {
     public static final String COLOR_PINK_TEXT = "#FFC0CB";
     public static final String COLOR_DEFAULT_BLUE_BUTTON = "#4A89F3";
     public static final String COLOR_ORANGE_BUTTON = "#f0ad4e";
-    public static final String COLOR_PINK_BUTTON = "#FFC0CB";
+    public static final String COLOR_PURPLE_BUTTON = "#8A2BE2";
+    public static final String COLOR_MAGENTA_BUTTON = "#FF00FF";
+
+
     public static final String COLOR_BG_LIGHT = "#F4F4F4";
     public static final String COLOR_BG_DARK = "#3C3F41";
     public static final String COLOR_BG_BLUE = "#2C3E50";
-    public static final String COLOR_BG_PINK = "#FFC0CB";
+    public static final String COLOR_BG_PURPLE = "#8A2BE2";
+    public static final String COLOR_BG_MAGENTA = "#FF00FF";
+
     public static final String COLOR_SIDEBAR_DEFAULT = "#34495E";
+    public static final String COLOR_SIDEBAR_PURPLE = "#8A2BE2";
+    public static final String COLOR_SIDEBAR_MAGENTA = "#FF00FF";
     public static final String COLOR_TXT_RED = "#FF0000";
     public static final String COLOR_BTN_RED = "#FF0000";
     public static final String COLOR_BACKGROUND_RED = "FF0000";
