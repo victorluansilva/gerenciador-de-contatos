@@ -23,6 +23,14 @@ public class ConfigService {
     public static final String COLOR_WHITE = "#FFFFFF";
     public static final String COLOR_BLACK = "#333333";
     public static final String COLOR_BLUE_TEXT = "#ECF0F1";
+    public static final String COLOR_GREEN_TEXT = "#2CFF05";
+    public static final String COLOR_DEFAULT_BLUE_BUTTON = "#4A89F3";
+    public static final String COLOR_ORANGE_BUTTON = "#f0ad4e";
+    public static final String COLOR_GREEN_BUTTON = "#2CFF05";
+    public static final String COLOR_BG_LIGHT = "#F4F4F4";
+    public static final String COLOR_BG_DARK = "#3C3F41";
+    public static final String COLOR_BG_BLUE = "#2C3E50";
+    public static final String COLOR_BG_GREEN = "#2CFF05";
     public static final String COLOR_NUBANK_TEXT = "#D3D3D3";
     public static final String COLOR_DEFAULT_BLUE_BUTTON = "#4A89F3";
     public static final String COLOR_ORANGE_BUTTON = "#f0ad4e";
