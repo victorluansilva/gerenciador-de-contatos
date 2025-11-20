@@ -1,14 +1,14 @@
 .root {
-    -background-base: #2C3E50;
+    -background-base: #7e76e3;
     -text-color: #ECF0F1;
-    -button-color: #3498DB;
+    -button-color: #343cdb;
     -button-text-color: white;
     -sidebar-background: #34495E;
     -sidebar-text-color: #BDC3C7;
-    -sidebar-hover-background: #4A637A;
+    -sidebar-hover-background: #7e76e3;
     -sidebar-hover-text-color: #FFFFFF;
-    -table-background: #34495E;
-    -table-header-background: #4A637A;
+    -table-background: #8b87ea;
+    -table-header-background: #343cdb;
     -table-header-text-color: white;
     -table-cell-text-color: #ECF0F1;
     -table-row-odd-background: #2C3E50;
