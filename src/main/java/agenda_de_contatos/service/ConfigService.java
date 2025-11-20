@@ -13,6 +13,9 @@ import java.util.regex.Pattern;
 
 public class ConfigService {
 
+    public static final String COLOR_YELLOW_TEXT = "#E6E600" ;
+    public static final String COLOR_YELLOW_BUTTON = "#E6E600";
+    public static final String COLOR_BG_YELLOW = "#E6E600";
     public static final String COLOR_BG_NUBANK = "#D3D3D3";
     public static final String COLOR_BLACK_TEXT = "000000";
     public static final String COLOR_BLACK_BUTTON = "000000";
