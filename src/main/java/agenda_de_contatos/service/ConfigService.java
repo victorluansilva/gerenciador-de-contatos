@@ -44,6 +44,10 @@ public class ConfigService {
     public static final String COLOR_BG_BLUE = "#2C3E50";
     public static final String COLOR_BG_PINK = "#FFC0CB";
     public static final String COLOR_SIDEBAR_DEFAULT = "#34495E";
+    public static final String COLOR_TXT_RED = "#FF0000";
+    public static final String COLOR_BTN_RED = "#FF0000";
+    public static final String COLOR_BACKGROUND_RED = "FF0000";
+    public static final String COLOR_SIDEBAR_RED = "FF0000";
     public static final String COLOR_TXT_BROWN= "#895129";
     public static final String COLOR_BTN_BROWN = "#895129";
     public static final String COLOR_BACKGROND_BROWN = "#895129";
