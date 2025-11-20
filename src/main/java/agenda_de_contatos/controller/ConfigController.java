@@ -15,7 +15,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ConfigController {
-
+//iniciar botoes//
     @FXML private ChoiceBox<String> storageChoiceBox;
     @FXML private TextField hostField;
     @FXML private TextField userField;
@@ -37,11 +37,44 @@ public class ConfigController {
     @FXML private Button btnBgDark;
     @FXML private Button btnBgBlue;
     @FXML private Button btnBgGreen;
+    @FXML private Button btnFontNubank;
+    @FXML private Button btnButtonWhite;
+    @FXML private Button btnButtonBlue;
+    @FXML private Button btnButtonOrange;
+    @FXML private Button btnButtonNubank;
+    @FXML private Button btnBgLight;
+    @FXML private Button btnBgDark;
+    @FXML private Button btnBgBlue;
+    @FXML private Button btnBgNubank;
+
+
+    @FXML private Button btnFontPink;
+    @FXML private Button btnButtonWhite;
+    @FXML private Button btnButtonBlue;
+    @FXML private Button btnButtonOrange;
+    @FXML private Button btnButtonPink;
+    @FXML private Button btnBgLight;
+    @FXML private Button btnBgDark;
+    @FXML private Button btnBgBlue;
+    @FXML private Button btnBgPink;
+
+    @FXML private Button btnBgBlack;
+    @FXML private Button btnFontBlack2;
+    @FXML private Button btnButtonBlack2;
+    @FXML private Button btnSidebarBlack;
+
+    @FXML private Button btnFontCian;
+    @FXML private Button btnBgCian;
+    @FXML private Button btnSidebarCian;
+    @FXML private Button btnButtonCian;
 
     @FXML private Button btnSidebarLight;
     @FXML private Button btnSidebarDark;
     @FXML private Button btnSidebarBlue;
     @FXML private Button btnSidebarGreen;
+    @FXML private Button btnSidebarPink;
+
+
 
     @FXML private Label configStatusLabel;
     @FXML private TabPane tabPane;
@@ -127,21 +160,38 @@ public class ConfigController {
         fontButtons.put(ConfigService.COLOR_BLACK, btnFontBlack);
         fontButtons.put(ConfigService.COLOR_BLUE_TEXT, btnFontBlue);
         fontButtons.put(ConfigService.COLOR_GREEN_TEXT, btnFontGreen);
+        fontButtons.put(ConfigService.COLOR_NUBANK_TEXT, btnFontNubank);
+
+        fontButtons.put(ConfigService.COLOR_BLACK_TEXT, btnFontBlack2);
+        fontButtons.put(ConfigService.COLOR_PINK_TEXT, btnFontPink);
+        fontButtons.put(ConfigService.COLOR_CIANO_TEXT, btnFontCian);
 
         buttonButtons.put(ConfigService.COLOR_WHITE, btnButtonWhite);
         buttonButtons.put(ConfigService.COLOR_DEFAULT_BLUE_BUTTON, btnButtonBlue);
         buttonButtons.put(ConfigService.COLOR_ORANGE_BUTTON, btnButtonOrange);
         buttonButtons.put(ConfigService.COLOR_GREEN_BUTTON, btnButtonGreen);
+        buttonButtons.put(ConfigService.COLOR_NUBANK_BUTTON, btnButtonNubank);
+        buttonButtons.put(ConfigService.COLOR_BLACK_BUTTON, btnButtonBlack2);
+        buttonButtons.put(ConfigService.COLOR_PINK_BUTTON, btnButtonPink);
+        buttonButtons.put(ConfigService.COLOR_CIANO_BUTTON, btnButtonCian);
 
+//
         backgroundButtons.put(ConfigService.COLOR_BG_LIGHT, btnBgLight);
         backgroundButtons.put(ConfigService.COLOR_BG_DARK, btnBgDark);
         backgroundButtons.put(ConfigService.COLOR_BG_BLUE, btnBgBlue);
         backgroundButtons.put(ConfigService.COLOR_BG_GREEN, btnBgGreen);
+        backgroundButtons.put(ConfigService.COLOR_BG_NUBANK, btnBgNubank);
+        backgroundButtons.put(ConfigService.COLOR_BG_BLACK, btnBgBlack);
+        backgroundButtons.put(ConfigService.COLOR_BG_PINK, btnBgPink);
+        backgroundButtons.put(ConfigService.COLOR_BG_CIANO, btnBgCian);
 
         sidebarButtons.put(ConfigService.COLOR_BG_LIGHT, btnSidebarLight);
         sidebarButtons.put(ConfigService.COLOR_BG_DARK, btnSidebarDark);
         sidebarButtons.put(ConfigService.COLOR_BG_BLUE, btnSidebarBlue);
         sidebarButtons.put(ConfigService.COLOR_BG_GREEN, btnSidebarGreen);
+        sidebarButtons.put(ConfigService.COLOR_BG_BLACK, btnSidebarBlack);
+        sidebarButtons.put(ConfigService.COLOR_BG_PINK, btnSidebarPink);
+        sidebarButtons.put(ConfigService.COLOR_SIDEBAR_CIANO, btnSidebarCian);
     }
 
     private void loadAndApplyCurrentThemeSelection() {
