@@ -1,5 +1,8 @@
 package agenda_de_contatos.service;
 
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -10,17 +13,36 @@ import java.util.regex.Pattern;
 
 public class ConfigService {
 
+    public static final String COLOR_BG_NUBANK = "#D3D3D3";
+    public static final String COLOR_BLACK_TEXT = "000000";
+    public static final String COLOR_BLACK_BUTTON = "000000";
+    public static final String COLOR_BG_BLACK = "000000";
     private final String CONFIG_FILE = "config.properties";
     private Properties props = new Properties();
 
     public static final String COLOR_WHITE = "#FFFFFF";
     public static final String COLOR_BLACK = "#333333";
     public static final String COLOR_BLUE_TEXT = "#ECF0F1";
+    public static final String COLOR_GREEN_TEXT = "#2CFF05";
     public static final String COLOR_DEFAULT_BLUE_BUTTON = "#4A89F3";
     public static final String COLOR_ORANGE_BUTTON = "#f0ad4e";
+    public static final String COLOR_GREEN_BUTTON = "#2CFF05";
     public static final String COLOR_BG_LIGHT = "#F4F4F4";
     public static final String COLOR_BG_DARK = "#3C3F41";
     public static final String COLOR_BG_BLUE = "#2C3E50";
+    public static final String COLOR_BG_GREEN = "#2CFF05";
+    public static final String COLOR_NUBANK_TEXT = "#D3D3D3";
+    public static final String COLOR_DEFAULT_BLUE_BUTTON = "#4A89F3";
+    public static final String COLOR_ORANGE_BUTTON = "#f0ad4e";
+    public static final String COLOR_NUBANK_BUTTON = "#D3D3D3";
+    public static final String COLOR_PINK_TEXT = "#FFC0CB";
+    public static final String COLOR_DEFAULT_BLUE_BUTTON = "#4A89F3";
+    public static final String COLOR_ORANGE_BUTTON = "#f0ad4e";
+    public static final String COLOR_PINK_BUTTON = "#FFC0CB";
+    public static final String COLOR_BG_LIGHT = "#F4F4F4";
+    public static final String COLOR_BG_DARK = "#3C3F41";
+    public static final String COLOR_BG_BLUE = "#2C3E50";
+    public static final String COLOR_BG_PINK = "#FFC0CB";
     public static final String COLOR_SIDEBAR_DEFAULT = "#34495E";
     public static final String COLOR_TXT_BROWN= "#895129";
     public static final String COLOR_BTN_BROWN = "#895129";
@@ -28,6 +50,18 @@ public class ConfigService {
     public static final String COLOR_SIDEBAR_BROWN = "#895129";
 
 
+
+
+  //EU FIZ
+    public static final String COLOR_BG_ROXONUBANK= "#820AD1";
+    public static final String COLOR_TEXT_BG_ROXONUBANK= "#820AD1";
+    public static final String COLOR_TEXT_BG_ROXONUBANK1= "#820AD1";
+
+
+    public static final String COLOR_CIANO_TEXT = "#00FFFF";
+    public static final String COLOR_BG_CIANO = "#00FFFF";
+    public static final String COLOR_SIDEBAR_CIANO = "#00FFFF";
+    public static final String COLOR_CIANO_BUTTON = "#00FFFF";
 
 
     public ConfigService() {
