@@ -234,6 +234,8 @@ public class ConfigController {
         backgroundButtons.put(ConfigService.COLOR_BG_LIGHT, btnBgLight);
         backgroundButtons.put(ConfigService.COLOR_BG_DARK, btnBgDark);
         backgroundButtons.put(ConfigService.COLOR_BG_BLUE, btnBgBlue);
+        backgroundButtons.put(ConfigService.COLOR_BG_PURPLE, btnBgPurple);
+        backgroundButtons.put(ConfigService.COLOR_BG_MAGENTA, btnBgMagenta);
         backgroundButtons.put(ConfigService.COLOR_BG_GREEN, btnBgGreen);
         backgroundButtons.put(ConfigService.COLOR_BG_NUBANK, btnBgNubank);
         backgroundButtons.put(ConfigService.COLOR_BG_BLACK, btnBgBlack);
