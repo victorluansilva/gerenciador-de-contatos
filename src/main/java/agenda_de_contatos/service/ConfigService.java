@@ -14,6 +14,9 @@ import java.util.regex.Pattern;
 public class ConfigService {
 
     public static final String COLOR_BG_NUBANK = "#D3D3D3";
+    public static final String COLOR_BLACK_TEXT = "000000";
+    public static final String COLOR_BLACK_BUTTON = "000000";
+    public static final String COLOR_BG_BLACK = "000000";
     private final String CONFIG_FILE = "config.properties";
     private Properties props = new Properties();
 
@@ -24,9 +27,14 @@ public class ConfigService {
     public static final String COLOR_DEFAULT_BLUE_BUTTON = "#4A89F3";
     public static final String COLOR_ORANGE_BUTTON = "#f0ad4e";
     public static final String COLOR_NUBANK_BUTTON = "#D3D3D3";
+    public static final String COLOR_PINK_TEXT = "#FFC0CB";
+    public static final String COLOR_DEFAULT_BLUE_BUTTON = "#4A89F3";
+    public static final String COLOR_ORANGE_BUTTON = "#f0ad4e";
+    public static final String COLOR_PINK_BUTTON = "#FFC0CB";
     public static final String COLOR_BG_LIGHT = "#F4F4F4";
     public static final String COLOR_BG_DARK = "#3C3F41";
     public static final String COLOR_BG_BLUE = "#2C3E50";
+    public static final String COLOR_BG_PINK = "#FFC0CB";
     public static final String COLOR_SIDEBAR_DEFAULT = "#34495E";
 
   //EU FIZ
@@ -35,6 +43,10 @@ public class ConfigService {
     public static final String COLOR_TEXT_BG_ROXONUBANK1= "#820AD1";
 
 
+    public static final String COLOR_CIANO_TEXT = "#00FFFF";
+    public static final String COLOR_BG_CIANO = "#00FFFF";
+    public static final String COLOR_SIDEBAR_CIANO = "#00FFFF";
+    public static final String COLOR_CIANO_BUTTON = "#00FFFF";
 
 
     public ConfigService() {
