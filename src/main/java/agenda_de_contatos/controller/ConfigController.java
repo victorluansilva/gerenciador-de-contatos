@@ -43,7 +43,10 @@ public class ConfigController {
     @FXML private Button btnButtonBlack2;
     @FXML private Button btnSidebarBlack;
 
-
+    @FXML private Button btnFontCian;
+    @FXML private Button btnBgCian;
+    @FXML private Button btnSidebarCian;
+    @FXML private Button btnButtonCian;
 
     @FXML private Button btnSidebarLight;
     @FXML private Button btnSidebarDark;
@@ -134,26 +137,29 @@ public class ConfigController {
         fontButtons.put(ConfigService.COLOR_BLACK, btnFontBlack);
         fontButtons.put(ConfigService.COLOR_BLUE_TEXT, btnFontBlue);
         fontButtons.put(ConfigService.COLOR_BLACK_TEXT, btnFontBlack2);
-
         fontButtons.put(ConfigService.COLOR_PINK_TEXT, btnFontPink);
+        fontButtons.put(ConfigService.COLOR_CIANO_TEXT, btnFontCian);
 
         buttonButtons.put(ConfigService.COLOR_WHITE, btnButtonWhite);
         buttonButtons.put(ConfigService.COLOR_DEFAULT_BLUE_BUTTON, btnButtonBlue);
         buttonButtons.put(ConfigService.COLOR_ORANGE_BUTTON, btnButtonOrange);
         buttonButtons.put(ConfigService.COLOR_BLACK_BUTTON, btnButtonBlack2);
         buttonButtons.put(ConfigService.COLOR_PINK_BUTTON, btnButtonPink);
+        buttonButtons.put(ConfigService.COLOR_CIANO_BUTTON, btnButtonCian);
 
         backgroundButtons.put(ConfigService.COLOR_BG_LIGHT, btnBgLight);
         backgroundButtons.put(ConfigService.COLOR_BG_DARK, btnBgDark);
         backgroundButtons.put(ConfigService.COLOR_BG_BLUE, btnBgBlue);
         backgroundButtons.put(ConfigService.COLOR_BG_BLACK, btnBgBlack);
         backgroundButtons.put(ConfigService.COLOR_BG_PINK, btnBgPink);
+        backgroundButtons.put(ConfigService.COLOR_BG_CIANO, btnBgCian);
 
         sidebarButtons.put(ConfigService.COLOR_BG_LIGHT, btnSidebarLight);
         sidebarButtons.put(ConfigService.COLOR_BG_DARK, btnSidebarDark);
         sidebarButtons.put(ConfigService.COLOR_BG_BLUE, btnSidebarBlue);
         sidebarButtons.put(ConfigService.COLOR_BG_BLACK, btnSidebarBlack);
         sidebarButtons.put(ConfigService.COLOR_BG_PINK, btnSidebarPink);
+        sidebarButtons.put(ConfigService.COLOR_SIDEBAR_CIANO, btnSidebarCian);
     }
 
     private void loadAndApplyCurrentThemeSelection() {

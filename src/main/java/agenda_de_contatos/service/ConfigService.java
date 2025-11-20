@@ -29,6 +29,12 @@ public class ConfigService {
     public static final String COLOR_BG_PINK = "#FFC0CB";
     public static final String COLOR_SIDEBAR_DEFAULT = "#34495E";
 
+    public static final String COLOR_CIANO_TEXT = "#00FFFF";
+    public static final String COLOR_BG_CIANO = "#00FFFF";
+    public static final String COLOR_SIDEBAR_CIANO = "#00FFFF";
+    public static final String COLOR_CIANO_BUTTON = "#00FFFF";
+
+
     public ConfigService() {
         loadConfig();
     }
