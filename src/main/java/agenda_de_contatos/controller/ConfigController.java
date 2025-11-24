@@ -10,7 +10,6 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.control.*;
 import javafx.scene.layout.HBox;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -35,9 +34,16 @@ public class ConfigController {
     @FXML private Button btnBgDark;
     @FXML private Button btnBgBlue;
 
+
     @FXML private Button btnSidebarLight;
     @FXML private Button btnSidebarDark;
     @FXML private Button btnSidebarBlue;
+
+    @FXML private Button btnFontPurple;
+    @FXML private Button btnButtonPurple;
+    @FXML private Button btnBgPurple;
+    @FXML private Button btnSidebarPurple;
+
 
     @FXML private Label configStatusLabel;
     @FXML private TabPane tabPane;
@@ -122,18 +128,25 @@ public class ConfigController {
         fontButtons.put(ConfigService.COLOR_WHITE, btnFontWhite);
         fontButtons.put(ConfigService.COLOR_BLACK, btnFontBlack);
         fontButtons.put(ConfigService.COLOR_BLUE_TEXT, btnFontBlue);
+        fontButtons.put(ConfigService.COLOR_PURPLE_TEXT, btnFontPurple);
 
         buttonButtons.put(ConfigService.COLOR_WHITE, btnButtonWhite);
         buttonButtons.put(ConfigService.COLOR_DEFAULT_BLUE_BUTTON, btnButtonBlue);
         buttonButtons.put(ConfigService.COLOR_ORANGE_BUTTON, btnButtonOrange);
+        buttonButtons.put(ConfigService.COLOR_PURPLE_BUTTON, btnButtonPurple);
+
 
         backgroundButtons.put(ConfigService.COLOR_BG_LIGHT, btnBgLight);
         backgroundButtons.put(ConfigService.COLOR_BG_DARK, btnBgDark);
         backgroundButtons.put(ConfigService.COLOR_BG_BLUE, btnBgBlue);
+        backgroundButtons.put(ConfigService.COLOR_BG_PURPLE, btnBgPurple);
+
 
         sidebarButtons.put(ConfigService.COLOR_BG_LIGHT, btnSidebarLight);
         sidebarButtons.put(ConfigService.COLOR_BG_DARK, btnSidebarDark);
         sidebarButtons.put(ConfigService.COLOR_BG_BLUE, btnSidebarBlue);
+        sidebarButtons.put(ConfigService.COLOR_SIDEBAR_PURPLE, btnSidebarPurple);
+
     }
 
     private void loadAndApplyCurrentThemeSelection() {

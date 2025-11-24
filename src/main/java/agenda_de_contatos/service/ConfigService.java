@@ -10,9 +10,15 @@ import java.util.regex.Pattern;
 
 public class ConfigService {
 
+
+
     private final String CONFIG_FILE = "config.properties";
     private Properties props = new Properties();
 
+    public static final String COLOR_PURPLE_TEXT = "#4B0082";
+    public static final String COLOR_PURPLE_BUTTON = "#4B0082";
+    public static final String COLOR_BG_PURPLE = "#4B0082";
+    public static final String COLOR_SIDEBAR_PURPLE = "#4B0082";
     public static final String COLOR_WHITE = "#FFFFFF";
     public static final String COLOR_BLACK = "#333333";
     public static final String COLOR_BLUE_TEXT = "#ECF0F1";
@@ -22,6 +28,9 @@ public class ConfigService {
     public static final String COLOR_BG_DARK = "#3C3F41";
     public static final String COLOR_BG_BLUE = "#2C3E50";
     public static final String COLOR_SIDEBAR_DEFAULT = "#34495E";
+
+
+
 
     public ConfigService() {
         loadConfig();
