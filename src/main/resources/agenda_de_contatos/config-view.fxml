@@ -108,7 +108,6 @@
                                         <Button fx:id="btnSidebarCian" onAction="#handleThemeChange" style="-fx-background-color: #00FFFF;" styleClass="theme-button" textFill="white" userData="sidebar:#00FFFF" />
                                     </HBox>
                                     <HBox alignment="CENTER_LEFT" spacing="15.0" />
-                                    <Slider prefHeight="14.0" prefWidth="600.0" />
                                 </VBox>
                             </content>
                         </Tab>

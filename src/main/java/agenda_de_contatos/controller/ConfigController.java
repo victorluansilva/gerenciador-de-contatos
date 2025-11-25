@@ -77,6 +77,7 @@ public class ConfigController {
     @FXML private Button btnbgPink;
     @FXML private Button btnBgBrown;
     @FXML private Button btnBgOrange;
+    @FXML private Button btnBgRoxoNubank;
 
     @FXML private Button btnSidebarBlack;
     @FXML private Button btnSidebarCian;
@@ -93,6 +94,8 @@ public class ConfigController {
     @FXML private Button btnSidebarBlack2;
     @FXML private Button btnSidebarDrak;
     @FXML private Button btnSidebarBlueDark;
+    @FXML private Button btnSidebarDefault;
+    @FXML private Button btnSidebarRoxoNubank;
 
 
     @FXML private Button btnTxtBrown;
@@ -233,24 +236,27 @@ public class ConfigController {
         backgroundButtons.put(ConfigService. COLOR_BG_DARK, btnBgDark);
         backgroundButtons.put(ConfigService. COLOR_BG_ORANGE, btnBgOrange);
         backgroundButtons.put(ConfigService. COLOR_BG_BLUEDARK, btnBgBlueDark);
+        backgroundButtons.put(ConfigService. COLOR_BG_BLUE, btnBgBlue);
+        backgroundButtons.put(ConfigService. COLOR_BG_ROXONUBANK, btnBgRoxoNubank);
 
         // Sidebar
-        sidebarButtons.put(ConfigService. COLOR_DEFAULT_BLUE_BG, btnBGDefaut);
-        sidebarButtons.put(ConfigService.COLOR_BG_PURPLE,  btnBgPurple);
-        sidebarButtons.put(ConfigService. COLOR_BG_MAGENTA, btnBgMagenta);
-        sidebarButtons.put(ConfigService.COLOR_BG_GREEN,  btnBgGreen);
-        sidebarButtons.put(ConfigService.COLOR_BG_NUBANK, btnBgNubank);
-        sidebarButtons.put(ConfigService.COLOR_BG_PINK, btnbgPink);
-        sidebarButtons.put(ConfigService. COLOR_BACKGROUND_RED,  btnBgRed);
-        sidebarButtons.put(ConfigService. COLOR_BACKGROND_BROWN, btnBgBrown);
-        sidebarButtons.put(ConfigService. COLOR_BG_CIANO, btnBgCian);
-        sidebarButtons.put(ConfigService. COLOR_BG_BLACK, btnBgBlack);
-        sidebarButtons.put(ConfigService. COLOR_BG_YELLOW, btnBgYellow);
-        sidebarButtons.put(ConfigService. COLOR_BG_DRAK, btnBgDark);
-        sidebarButtons.put(ConfigService. COLOR_BG_LIGHT, btnBgLight);
-        sidebarButtons.put(ConfigService. COLOR_BG_DARK, btnBgDark);
-        sidebarButtons.put(ConfigService. COLOR_BG_ORANGE, btnBgOrange);
-        sidebarButtons.put(ConfigService. COLOR_BG_BLUEDARK, btnBgBlueDark);
+        sidebarButtons.put(ConfigService. COLOR_SIDEBAR_DEFAULT, btnSidebarDefault);
+        sidebarButtons.put(ConfigService.COLOR_SIDEBAR_PURPLE, btnSidebarPurple);
+        sidebarButtons.put(ConfigService. COLOR_SIDEBAR_MAGENTA, btnSidebarMagenta);
+        sidebarButtons.put(ConfigService.COLOR_SIDEBAR_GREEN, btnSidebarGreen);
+        sidebarButtons.put(ConfigService.COLOR_SIDEBAR_NUBANK, btnSidebarNubank);
+        sidebarButtons.put(ConfigService.COLOR_SIDEBAR_PINK, btnSidebarPurple);
+        sidebarButtons.put(ConfigService. COLOR_SIDEBAR_RED, btnSidebarRed);
+        sidebarButtons.put(ConfigService. COLOR_SIDEBAR_BROWN, btnSidebarBrown);
+        sidebarButtons.put(ConfigService. COLOR_SIDEBAR_CIANO, btnSidebarCian);
+        sidebarButtons.put(ConfigService. COLOR_SIDEBAR_BLACK, btnSidebarBlack);
+        sidebarButtons.put(ConfigService. COLOR_SIDEBAR_YELLOW, btnSidebarYellow);
+        sidebarButtons.put(ConfigService. COLOR_SIDEBAR_DRAK, btnSidebarDark);
+        sidebarButtons.put(ConfigService. COLOR_SIDEBAR_LIGHT, btnSidebarLight);
+        sidebarButtons.put(ConfigService. COLOR_SIDEBAR_DARK, btnSidebarDark);
+        sidebarButtons.put(ConfigService. COLOR_SIDEBAR_BLUE, btnSidebarBlue);
+        sidebarButtons.put(ConfigService. COLOR_SIDEBAR_BLUEDARK, btnSidebarBlueDark);
+        sidebarButtons.put(ConfigService. COLOR_SIDEBAR_ROXONUBANK, btnSidebarRoxoNubank);
     }
 
     private void loadAndApplyCurrentThemeSelection() {
@@ -308,16 +314,18 @@ public class ConfigController {
         String selectedClass = "selected-theme-button";
 
         buttonGroup.forEach((value, button) -> {
-            boolean isSelected = value.equalsIgnoreCase(selectedValue);
+            if (button != null) {
+                boolean isSelected = value.equalsIgnoreCase(selectedValue);
 
-            if (isSelected) {
-                if (!button.getStyleClass().contains(selectedClass)) {
-                    button.getStyleClass().add(selectedClass);
+                if (isSelected) {
+                    if (!button.getStyleClass().contains(selectedClass)) {
+                        button.getStyleClass().add(selectedClass);
+                    }
+                } else {
+                    button.getStyleClass().remove(selectedClass);
                 }
-            } else {
-                button.getStyleClass().remove(selectedClass);
+                button.setDisable(isSelected);
             }
-            button.setDisable(isSelected);
         });
     }
 
