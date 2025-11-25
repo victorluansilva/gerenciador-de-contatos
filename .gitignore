@@ -45,3 +45,4 @@ config.properties
 .local_files
 .idea
 agenda_contatos.db
+.vs
