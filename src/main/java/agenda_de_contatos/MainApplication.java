@@ -22,7 +22,7 @@ public class MainApplication extends Application {
         scene.getStylesheets().add(MainApplication.class.getResource("dark-theme.css").toExternalForm());
         applySavedThemeStyles(root);
 
-        stage.setTitle("Agenda de Contatos VLS");
+        stage.setTitle("Gerenciador de Contatos");
         stage.setScene(scene);
         stage.show();
     }
