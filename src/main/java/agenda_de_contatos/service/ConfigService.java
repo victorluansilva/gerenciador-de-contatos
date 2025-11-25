@@ -38,19 +38,12 @@ public class ConfigService {
     public static final String COLOR_BG_BLUE = "#2C3E50";
     public static final String COLOR_BG_GREEN = "#2CFF05";
     public static final String COLOR_NUBANK_TEXT = "#D3D3D3";
-    public static final String COLOR_DEFAULT_BLUE_BUTTON = "#4A89F3";
-    public static final String COLOR_ORANGE_BUTTON = "#f0ad4e";
     public static final String COLOR_NUBANK_BUTTON = "#D3D3D3";
     public static final String COLOR_PINK_TEXT = "#FFC0CB";
-    public static final String COLOR_DEFAULT_BLUE_BUTTON = "#4A89F3";
-    public static final String COLOR_ORANGE_BUTTON = "#f0ad4e";
     public static final String COLOR_PURPLE_BUTTON = "#8A2BE2";
     public static final String COLOR_MAGENTA_BUTTON = "#FF00FF";
 
 
-    public static final String COLOR_BG_LIGHT = "#F4F4F4";
-    public static final String COLOR_BG_DARK = "#3C3F41";
-    public static final String COLOR_BG_BLUE = "#2C3E50";
     public static final String COLOR_BG_PURPLE = "#8A2BE2";
     public static final String COLOR_BG_MAGENTA = "#FF00FF";
 
