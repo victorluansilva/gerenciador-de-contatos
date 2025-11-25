@@ -33,18 +33,31 @@
 
                                     <HBox alignment="CENTER_LEFT" spacing="15.0">
                                         <Label minWidth="100.0" prefHeight="17.0" prefWidth="100.0" text="Cor da Fonte:" />
-                                        <Button fx:id="btnFontWhite" onAction="#handleThemeChange" style="-fx-background-color: #FFFFFF;" styleClass="theme-button" textFill="black" userData="font:#FFFFFF" />
-                                        <Button fx:id="btnFontBlack" onAction="#handleThemeChange" style="-fx-background-color: #333333;" styleClass="theme-button" textFill="white" userData="font:#333333" />
-                                        <Button fx:id="btnFontBlue" onAction="#handleThemeChange" style="-fx-background-color: #ECF0F1;" styleClass="theme-button" textFill="black" userData="font:#ECF0F1" />
-                                        <Button fx:id="btnFontPurple" onAction="#handleThemeChange" style="-fx-background-color: #8A2BE2;" styleClass="theme-button" textFill="Purple" userData="font:#8A2BE2" />
-                                        <Button fx:id="btnFontMagenta" onAction="#handleThemeChange" style="-fx-background-color: #FF00FF;" styleClass="theme-button" textFill="Purple" userData="font:#FF00FF" />
+                                        <Button fx:id="btnFontWhiteWhite" onAction="#handleThemeChange" style="-fx-background-color: #FFFFFF;" styleClass="theme-button" textFill="black" userData="button:#FFFFFF" />
+                                        <Button fx:id="btnFonteDark" onAction="#handleThemeChange" style="-fx-background-color: #3C3F41;" styleClass="theme-button" textFill="white" userData="background:#3C3F41" />
+                                        <Button fx:id="btnFontDrak" onAction="#handleThemeChange" style="-fx-background-color: #2C3E50;" styleClass="theme-button" textFill="white" userData="background:#2C3E50" />
+                                        <Button fx:id="btnFontBlue" onAction="#handleThemeChange" style="-fx-background-color: #4A89F3;" styleClass="theme-button" textFill="white" userData="button:#4A89F3" />
+                                        <Button fx:id="btnFontOrange" onAction="#handleThemeChange" style="-fx-background-color: #f0ad4e;" styleClass="theme-button" textFill="white" userData="button:#f0ad4e" />
+                                        <Button fx:id="btnFontBlueDark" onAction="#handleThemeChange" style="-fx-background-color: #554af3;" styleClass="theme-button" textFill="white" userData="button:#4A89F3" />
+                                        <Button fx:id="btnFontPurple" onAction="#handleThemeChange" style="-fx-background-color: #8A2BE2;" styleClass="theme-button" textFill="Purple" userData="button:#8A2BE2" />
+                                        <Button fx:id="btnFontMagenta" onAction="#handleThemeChange" style="-fx-background-color: #FF00FF;" styleClass="theme-button" textFill="Purple" userData="button:#FF00FF" />
+                                        <Button fx:id="btnFontYellow" onAction="#handleThemeChange" style="-fx-background-color: #E6E600;" styleClass="theme-button" textFill="yellow" userData="button:#E6E600" />
+                                        <Button fx:id="btnFontRed" onAction="#handleThemeChange" style="-fx-background-color: #FF0000;" styleClass="theme-button" textFill="red" userData="button:#FF0000" />
+                                        <Button fx:id="btnFontBrown" onAction="#handleThemeChange" style="-fx-background-color: #895129;" styleClass="theme-button" textFill="brown" userData="button:#895129" />
+                                        <Button fx:id="btnFontGreen" onAction="#handleThemeChange" style="-fx-background-color: #2CFF05;" styleClass="theme-button" textFill="white" userData="button:#2CFF05" />
+                                        <Button fx:id="btnFontNubank" onAction="#handleThemeChange" style="-fx-background-color: #D3D3D3;" styleClass="theme-button" textFill="white" userData="button:#D3D3D3" />
+                                        <Button fx:id="btnFontBlack2" onAction="#handleThemeChange" style="-fx-background-color: #000000;" styleClass="theme-button" textFill="white" userData="button:#000000" />
+                                        <Button fx:id="btnFontPink" onAction="#handleThemeChange" style="-fx-background-color: #FFC0CB;" styleClass="theme-button" textFill="white" userData="button:#FFC0CB" />
+                                        <Button fx:id="btnFontCian" onAction="#handleThemeChange" style="-fx-background-color: #00FFFF;" styleClass="theme-button" textFill="white" userData="button:#00FFFF" />
                                     </HBox>
                                     <HBox alignment="CENTER_LEFT" spacing="15.0">
                                         <Label minWidth="100.0" prefHeight="17.0" prefWidth="100.0" text="Cor dos Botões:" />
                                         <Button fx:id="btnButtonWhite" onAction="#handleThemeChange" style="-fx-background-color: #FFFFFF;" styleClass="theme-button" textFill="black" userData="button:#FFFFFF" />
-                              <Button fx:id="btnBgBlue1" onAction="#handleThemeChange" style="-fx-background-color: #2C3E50;" styleClass="theme-button" textFill="white" userData="background:#2C3E50" />
+                                        <Button fx:id="btnButtonDark" onAction="#handleThemeChange" style="-fx-background-color: #3C3F41;" styleClass="theme-button" textFill="white" userData="background:#3C3F41" />
+                                        <Button fx:id="btnButtonDrak" onAction="#handleThemeChange" style="-fx-background-color: #2C3E50;" styleClass="theme-button" textFill="white" userData="background:#2C3E50" />
+                                        <Button fx:id="btnButtonBlue" onAction="#handleThemeChange" style="-fx-background-color: #4A89F3;" styleClass="theme-button" textFill="white" userData="button:#4A89F3" />
                                         <Button fx:id="btnButtonOrange" onAction="#handleThemeChange" style="-fx-background-color: #f0ad4e;" styleClass="theme-button" textFill="white" userData="button:#f0ad4e" />
-                                        <Button fx:id="btnButtonBlue" onAction="#handleThemeChange" style="-fx-background-color: #554af3;" styleClass="theme-button" textFill="white" userData="button:#4A89F3" />
+                                        <Button fx:id="btnButtonBlueDark" onAction="#handleThemeChange" style="-fx-background-color: #554af3;" styleClass="theme-button" textFill="white" userData="button:#4A89F3" />
                                         <Button fx:id="btnButtonPurple" onAction="#handleThemeChange" style="-fx-background-color: #8A2BE2;" styleClass="theme-button" textFill="Purple" userData="button:#8A2BE2" />
                                         <Button fx:id="btnButtonMagenta" onAction="#handleThemeChange" style="-fx-background-color: #FF00FF;" styleClass="theme-button" textFill="Purple" userData="button:#FF00FF" />
                                         <Button fx:id="btnButtonYellow" onAction="#handleThemeChange" style="-fx-background-color: #E6E600;" styleClass="theme-button" textFill="yellow" userData="button:#E6E600" />
@@ -58,12 +71,12 @@
                                     </HBox>
                                     <HBox alignment="CENTER_LEFT" spacing="15.0">
                                         <Label minWidth="93.0" prefHeight="17.0" prefWidth="100.0" text="Cor de Fundo:" />
-                                        <Button fx:id="btnBgLight" onAction="#handleThemeChange" style="-fx-background-color: #F4F4F4;" styleClass="theme-button" textFill="black" userData="background:#F4F4F4" />
+                                        <Button fx:id="btnBgLight" onAction="#handleThemeChange" style="-fx-background-color: #FFFFFF;" styleClass="theme-button" textFill="black" userData="background:#FFFFFF" />
                                         <Button fx:id="btnBgDark" onAction="#handleThemeChange" style="-fx-background-color: #3C3F41;" styleClass="theme-button" textFill="white" userData="background:#3C3F41" />
-                                        <Button fx:id="btnBgBlue" onAction="#handleThemeChange" style="-fx-background-color: #2C3E50;" styleClass="theme-button" textFill="white" userData="background:#2C3E50" />
-                                        <Button fx:id="btnButtonBlue" onAction="#handleThemeChange" style="-fx-background-color: #4A89F3;" styleClass="theme-button" textFill="white" userData="button:#4A89F3" />
-                              <Button fx:id="btnButtonOrange1" onAction="#handleThemeChange" style="-fx-background-color: #f0ad4e;" styleClass="theme-button" textFill="white" userData="button:#f0ad4e" />
-                              <Button fx:id="btnBgBlue" onAction="#handleThemeChange" style="-fx-background-color: #554af3;" styleClass="theme-button" textFill="white" userData="button:#4A89F3" />
+                                        <Button fx:id="btnBgDrak" onAction="#handleThemeChange" style="-fx-background-color: #2C3E50;" styleClass="theme-button" textFill="white" userData="background:#2C3E50" />
+                                        <Button fx:id="btnBgBlue" onAction="#handleThemeChange" style="-fx-background-color: #4A89F3;" styleClass="theme-button" textFill="white" userData="button:#4A89F3" />
+                                        <Button fx:id="btnBgOrange" onAction="#handleThemeChange" style="-fx-background-color: #f0ad4e;" styleClass="theme-button" textFill="white" userData="button:#f0ad4e" />
+                                        <Button fx:id="btnBgBlueDark" onAction="#handleThemeChange" style="-fx-background-color: #554af3;" styleClass="theme-button" textFill="white" userData="button:#4A89F3" />
                                         <Button fx:id="btnBgPurple" onAction="#handleThemeChange" style="-fx-background-color: #8A2BE2;" styleClass="theme-button" textFill="white" userData="background:#8A2BE2" />
                                         <Button fx:id="btnBgMagenta" onAction="#handleThemeChange" style="-fx-background-color: #FF00FF;" styleClass="theme-button" textFill="white" userData="background:#FF00FF" />
                                         <Button fx:id="btnBgYellow" onAction="#handleThemeChange" style="-fx-background-color: #E6E600;" styleClass="theme-button" textFill="yellow" userData="background:#E6E600" />
@@ -77,11 +90,12 @@
                                     </HBox>
                                     <HBox alignment="CENTER_LEFT" spacing="15.0">
                                         <Label minWidth="96.0" prefHeight="17.0" prefWidth="100.0" text="Cor Barra Lateral:" />
-                                        <Button fx:id="btnSidebarLight" onAction="#handleThemeChange" style="-fx-background-color: #F4F4F4;" styleClass="theme-button" textFill="black" userData="sidebar:#F4F4F4" />
+                                        <Button fx:id="btnSidebarLight" onAction="#handleThemeChange" style="-fx-background-color: #FFFFFF;" styleClass="theme-button" textFill="black" userData="sidebar:#FFFFFF" />
                                         <Button fx:id="btnSidebarDark" onAction="#handleThemeChange" style="-fx-background-color: #3C3F41;" styleClass="theme-button" textFill="white" userData="sidebar:#3C3F41" />
-                                        <Button fx:id="btnSidebarBlue" onAction="#handleThemeChange" style="-fx-background-color: #2C3E50;" styleClass="theme-button" textFill="white" userData="sidebar:#2C3E50" />
-                              <Button fx:id="btnButtonOrange11" onAction="#handleThemeChange" style="-fx-background-color: #f0ad4e;" styleClass="theme-button" textFill="white" userData="button:#f0ad4e" />
-                              <Button fx:id="btnSidebarBlue" onAction="#handleThemeChange" style="-fx-background-color: #554af3;" styleClass="theme-button" textFill="white" userData="button:#4A89F3" />
+                                        <Button fx:id="btnSidebarDrak" onAction="#handleThemeChange" style="-fx-background-color: #2C3E50;" styleClass="theme-button" textFill="white" userData="sidebar:#2C3E50" />
+                                        <Button fx:id="btnSidebarBlue" onAction="#handleThemeChange" style="-fx-background-color: #4A89F3;" styleClass="theme-button" textFill="white" userData="button:#4A89F3" />
+                                        <Button fx:id="btnSidebarOrange" onAction="#handleThemeChange" style="-fx-background-color: #f0ad4e;" styleClass="theme-button" textFill="white" userData="button:#f0ad4e" />
+                                        <Button fx:id="btnSidebarBlueDark" onAction="#handleThemeChange" style="-fx-background-color: #554af3;" styleClass="theme-button" textFill="white" userData="button:#4A89F3" />
                                         <Button fx:id="btnSidebarPurple" onAction="#handleThemeChange" style="-fx-background-color: #8A2BE2;" styleClass="theme-button" textFill="white" userData="sidebar:#8A2BE2" />
                                         <Button fx:id="btnSidebarMagenta" onAction="#handleThemeChange" style="-fx-background-color: #FF00FF;" styleClass="theme-button" textFill="white" userData="sidebar:#FF00FF" />
                                         <Button fx:id="btnSidebarYellow" onAction="#handleThemeChange" style="-fx-background-color: #E6E600;" styleClass="theme-button" textFill="yellow" userData="sidebar:#E6E600" />
@@ -94,6 +108,7 @@
                                         <Button fx:id="btnSidebarCian" onAction="#handleThemeChange" style="-fx-background-color: #00FFFF;" styleClass="theme-button" textFill="white" userData="sidebar:#00FFFF" />
                                     </HBox>
                                     <HBox alignment="CENTER_LEFT" spacing="15.0" />
+                                    <Slider prefHeight="14.0" prefWidth="600.0" />
                                 </VBox>
                             </content>
                         </Tab>
