@@ -41,4 +41,8 @@ build/
 .env
 .mvn
 target
-.pdf
+config.properties
+.local_files
+.idea
+agenda_contatos.db
+.vs
