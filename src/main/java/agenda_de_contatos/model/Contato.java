@@ -10,6 +10,7 @@ public class Contato {
     private LocalDate dataNasc;
     private String endereco;
     private String email;
+    private String observacao;
 
     public Contato() {
         this.nome = "";
@@ -17,6 +18,7 @@ public class Contato {
         this.dataNasc = null;
         this.endereco = "";
         this.email = "";
+        this.observacao = "";
     }
 
     public Contato(String nome, String telefone, LocalDate dataNasc, String endereco, String email) {
@@ -25,6 +27,7 @@ public class Contato {
         this.dataNasc = dataNasc;
         this.endereco = endereco;
         this.email = email;
+        this.observacao = "";
     }
 
     public int getId() {
@@ -41,6 +44,14 @@ public class Contato {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getObservacao() {
+        return observacao;
+    }
+
+    public void setObservacao(String observacao) {
+        this.observacao = observacao;
     }
 
     public String getTelefone() {
