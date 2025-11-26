@@ -73,9 +73,9 @@ public class ContatoListController {
                 if (contato.getNome() != null && contato.getNome().toLowerCase().contains(lowerCaseFilter)) {
                     return true;
                 }
-                 else if (contato.getTelefone() != null && contato.getTelefone().contains(newValue)) {
-                   return true;
-                 }
+                else if (contato.getTelefone() != null && contato.getTelefone().contains(newValue)) {
+                    return true;
+                }
                 return false;
             });
         });
