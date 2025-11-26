@@ -11,6 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
+<?import javafx.scene.control.Tooltip?>
 <AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="agenda_de_contatos.controller.ContatoFormController">
     <children>
         <VBox alignment="TOP_CENTER" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -32,7 +33,8 @@
                     <Label text="Telefone:" GridPane.rowIndex="1" />
                     <TextField fx:id="telefoneField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                     <Label text="Data de Nascimento:" GridPane.rowIndex="2" />
-                    <DatePicker fx:id="dataNascPicker" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                    <DatePicker fx:id="dataNascPicker" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="2"><tooltip><Tooltip text="Calendario de escolher a sua data de nascimento"/></tooltip>
+                    </DatePicker>
                     <Label text="Email:" GridPane.rowIndex="3" />
                     <TextField fx:id="emailField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                     <Label text="Endereço:" GridPane.rowIndex="4" />
