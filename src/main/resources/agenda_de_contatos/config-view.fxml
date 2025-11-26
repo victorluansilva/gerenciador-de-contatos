@@ -139,7 +139,7 @@
                                     <HBox alignment="CENTER_LEFT" spacing="10.0">
                                         <children>
                                             <Button fx:id="testButton" onAction="#handleTestar" text="Testar MySQL" ><tooltip><Tooltip text="Teste do Bnaco de Dados"/></tooltip></Button>
-                                            <Button onAction="#handleSalvarStorage" text="Salvar Armazenamento" ><tooltip><Tooltip text="Salva sua escolha de armazenamento"/></tooltip></Button>
+                                            <Button onAction="#handleSalvarStorage" text="Salvar Armazenamento" ><tooltip><Tooltip text="Salva sua escolha de armazenamento."/></tooltip></Button>
                                             <Label fx:id="storageStatusLabel" />
                                         </children>
                                         <VBox.margin>
