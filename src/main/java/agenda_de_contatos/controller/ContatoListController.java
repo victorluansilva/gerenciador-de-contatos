@@ -25,7 +25,10 @@ public class ContatoListController {
     @FXML
     private TableColumn<Contato, String> colEmail;
     @FXML
+    private TableColumn<Contato, String> colObservacao;
+    @FXML
     private TableColumn<Contato, Void> colAcoes;
+
 
     @FXML
     private Label statusLabel;
@@ -59,6 +62,7 @@ public class ContatoListController {
         colNome.setCellValueFactory(new PropertyValueFactory<>("nome"));
         colTelefone.setCellValueFactory(new PropertyValueFactory<>("telefone"));
         colEmail.setCellValueFactory(new PropertyValueFactory<>("email"));
+        colObservacao.setCellValueFactory(new PropertyValueFactory<>("observacao"));
     }
 
     private void loadDataAndSetupFilter() {

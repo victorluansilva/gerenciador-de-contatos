@@ -22,6 +22,7 @@ public class ContatoFormController {
     @FXML private DatePicker dataNascPicker;
     @FXML private TextField emailField;
     @FXML private TextField enderecoField;
+    @FXML private TextField observacaoField;
 
     private Contato contato;
     private ContatoService contatoService;
@@ -43,6 +44,7 @@ public class ContatoFormController {
         if (contato != null) {
             titleLabel.setText("Editar Contato");
             nomeField.setText(contato.getNome());
+            observacaoField.setText(contato.getObservacao());
             telefoneField.setText(contato.getTelefone());
             if (contato.getDataNascimento() != null) {
                 dataNascPicker.setValue(contato.getDataNascimento());
@@ -52,6 +54,7 @@ public class ContatoFormController {
         } else {
             titleLabel.setText("Adicionar Novo Contato");
         }
+
 
         setupValidation();
     }
@@ -94,6 +97,8 @@ public class ContatoFormController {
                 })
                 .decorates(emailField)
                 .immediate();
+
+
     }
 
     @FXML
@@ -126,6 +131,7 @@ public class ContatoFormController {
         if (mainController != null) {
             mainController.initialize();
         }
+
     }
 
 }
