@@ -80,6 +80,9 @@ public class ContatoListController {
                  else if (contato.getTelefone() != null && contato.getTelefone().contains(newValue)) {
                    return true;
                  }
+                if(contato.getTelefone() != null && contato.getTelefone().contains(lowerCaseFilter)){
+                    int filtroNumerico = Integer.parseInt(newValue);
+                }
                 return false;
             });
         });
