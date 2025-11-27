@@ -19,6 +19,7 @@
                 <Button fx:id="btnContatos" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#handleShowContatoList" styleClass="sidebar-button" text="Contatos"> <graphic> <FontIcon iconLiteral="fas-users" iconSize="20" styleClass="icon" /> </graphic> </Button>
                 <Button fx:id="btnAdicionar" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#handleShowContatoForm" styleClass="sidebar-button" text="Adicionar Novo"> <graphic> <FontIcon iconLiteral="fas-user-plus" iconSize="20" styleClass="icon" /> </graphic> </Button>
                 <Button fx:id="btnConfig" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#handleShowConfig" styleClass="sidebar-button" text="Configurações"> <graphic> <FontIcon iconLiteral="fas-cog" iconSize="20" styleClass="icon" /> </graphic> </Button>
+                <Button fx:id="btnImport" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#handleImportarContato" styleClass="sidebar-button" text="Importar"> <graphic> <FontIcon iconLiteral="fas-file-import" iconSize="20" styleClass="icon" /> </graphic> </Button>
                 <VBox VBox.vgrow="ALWAYS" />
 
                 <Button fx:id="btnSair" onAction="#handleSair" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" styleClass="sidebar-button" text="Sair"> <graphic> <FontIcon iconLiteral="fas-sign-out-alt" iconSize="20" styleClass="icon" /> </graphic> </Button> </children>

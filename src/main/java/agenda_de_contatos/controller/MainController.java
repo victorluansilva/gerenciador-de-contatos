@@ -47,6 +47,11 @@ public class MainController {
         Platform.exit();
     }
 
+    @FXML
+    private void handleImportarContato(){
+        loadView("import-contato-view.fxml", null);
+    }
+
     public void showEditForm(Contato contato) {
         loadView("contato-form-view.fxml", contato);
     }
