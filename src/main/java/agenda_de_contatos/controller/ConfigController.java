@@ -1,3 +1,4 @@
+
 package agenda_de_contatos.controller;
 
 import agenda_de_contatos.MainApplication;
@@ -16,6 +17,15 @@ import java.util.Map;
 
 public class ConfigController {
     public Button btnButtonDrak;
+    public Button btnBorderOrange;
+    public Button btnBorderPink;
+    public Button btnSidebarPink;
+    public Button btnBgPink;
+    public Button btnFontWhiteWhite;
+    public Button btnFonteDark;
+    public Button btnFontBrown;
+    public Button btnFontRed;
+    public Button btnSidebarOrange;
     //iniciar botoes//
     @FXML private ChoiceBox<String> storageChoiceBox;
     @FXML private TextField hostField;
@@ -27,7 +37,8 @@ public class ConfigController {
     @FXML private Label passLabel;
     @FXML private Label storageStatusLabel;
 
-    // Botões de Fonte (Font Buttons)
+    @FXML private Button btnFontWhite;
+    @FXML private Button btnFontBlack;
     @FXML private Button btnFontBlue;
     @FXML private Button btnFontPurple;
     @FXML private Button btnFontMagenta;
@@ -35,21 +46,12 @@ public class ConfigController {
     @FXML private Button btnFontGreen;
     @FXML private Button btnFontNubank;
     @FXML private Button btnFontPink;
+    @FXML private Button btnFontBlack2;
     @FXML private Button btnFontCian;
     @FXML private Button btnFontBlueDark;
     @FXML private Button btnFontDrak;
     @FXML private Button btnFontOrange;
-    @FXML private Button btnFontBrown;
-    @FXML private Button btnFontRed;
-    @FXML private Button btnFontWhite;
-    @FXML private Button btnFontBlack;
-    @FXML private Button btnFontDark;
-    @FXML private Button btnFontBlack2;
-    @FXML private Button btnTxtBrown;
-    @FXML private Button btnTxtRed;
 
-
-    // Botões de Componentes (Button Buttons)
     @FXML private Button btnButtonWhite;
     @FXML private Button btnButtonBlue;
     @FXML private Button btnButtonOrange;
@@ -60,16 +62,13 @@ public class ConfigController {
     @FXML private Button btnButtonRed;
     @FXML private Button btnButtonPurple;
     @FXML private Button btnButtonMagenta;
-    @FXML private Button btnButtonBlack;
+    @FXML private Button btnButtonBlack2;
     @FXML private Button btnButtonCian;
     @FXML private Button btnButtonPink;
+    @FXML private Button btnButtonLight;
     @FXML private Button btnButtonDark;
     @FXML private Button btnButtonBlueDark;
-    @FXML private Button btnButtonLight;
-    @FXML private Button btnButtonBlack2;
 
-
-    // Botões de Fundo (Background Buttons)
     @FXML private Button btnBgLight;
     @FXML private Button btnBgDark;
     @FXML private Button btnBgBlue;
@@ -82,17 +81,14 @@ public class ConfigController {
     @FXML private Button btnBgBlack;
     @FXML private Button btnBgCian;
     @FXML private Button btnBgBlueDark;
-    @FXML private Button btnBgPink;
-    @FXML private Button btnBgBrown;
-    @FXML private Button btnBgOrange;
     @FXML private Button btnBgDrak;
     @FXML private Button BtnButtonBrown;
     @FXML private Button btnBGDefaut;
     @FXML private Button btnbgPink;
+    @FXML private Button btnBgBrown;
+    @FXML private Button btnBgOrange;
     @FXML private Button btnBgRoxoNubank;
 
-
-    // Botões de Sidebar (Sidebar Buttons)
     @FXML private Button btnSidebarBlack;
     @FXML private Button btnSidebarCian;
     @FXML private Button btnSidebarLight;
@@ -105,13 +101,33 @@ public class ConfigController {
     @FXML private Button btnSidebarGreen;
     @FXML private Button btnSidebarBrown;
     @FXML private Button btnSidebarNubank;
-    @FXML private Button btnSidebarBlueDark;
-    @FXML private Button btnSidebarDrak;
-    @FXML private Button btnSidebarOrange;
-    @FXML private Button btnSidebarPink;
     @FXML private Button btnSidebarBlack2;
+    @FXML private Button btnSidebarDrak;
+    @FXML private Button btnSidebarBlueDark;
     @FXML private Button btnSidebarDefault;
     @FXML private Button btnSidebarRoxoNubank;
+
+    @FXML private Button btnBorderBlack;
+    @FXML private Button btnBorderCian;
+    @FXML private Button btnBorderLight;
+    @FXML private Button btnBorderDark;
+    @FXML private Button btnBorderBlue;
+    @FXML private Button btnBorderPurple;
+    @FXML private Button btnBorderMagenta;
+    @FXML private Button btnBorderYellow;
+    @FXML private Button btnBorderRed;
+    @FXML private Button btnBorderGreen;
+    @FXML private Button btnBorderBrown;
+    @FXML private Button btnBorderNubank;
+    @FXML private Button btnBorderBlack2;
+    @FXML private Button btnBorderDrak;
+    @FXML private Button btnBorderBlueDark;
+    @FXML private Button btnBorderDefault;
+    @FXML private Button btnBorderRoxoNubank;
+
+
+    @FXML private Button btnTxtBrown;
+    @FXML private Button btnTxtRed;
 
     @FXML private Label configStatusLabel;
     @FXML private TabPane tabPane;
@@ -123,6 +139,7 @@ public class ConfigController {
     private Map<String, Button> buttonButtons = new HashMap<>();
     private Map<String, Button> backgroundButtons = new HashMap<>();
     private Map<String, Button> sidebarButtons = new HashMap<>();
+    private Map<String, Button> borderButtons = new HashMap<>();
 
 
     public void setMainController(MainController mainController) {
@@ -140,8 +157,6 @@ public class ConfigController {
 
         groupThemeButtons();
         loadAndApplyCurrentThemeSelection();
-
-
     }
 
     private void loadStorageConfigData() {
@@ -155,12 +170,9 @@ public class ConfigController {
     }
 
     private void toggleMysqlFields(boolean enable) {
-        hostLabel.setVisible(enable);
-        hostField.setVisible(enable);
-        userLabel.setVisible(enable);
-        userField.setVisible(enable);
-        passLabel.setVisible(enable);
-        passField.setVisible(enable);
+        hostLabel.setVisible(enable); hostField.setVisible(enable);
+        userLabel.setVisible(enable); userField.setVisible(enable);
+        passLabel.setVisible(enable); passField.setVisible(enable);
         testButton.setVisible(enable);
     }
 
@@ -198,95 +210,101 @@ public class ConfigController {
     private void groupThemeButtons() {
 
         //Fonte
-        fontButtons.put(ConfigService.COLOR_BLUE_TEXT, btnFontBlue);
+        fontButtons.put(ConfigService. COLOR_BLUE_TEXT, btnFontBlue);
         fontButtons.put(ConfigService.COLOR_PURPLE_TEXT, btnFontPurple);
-        fontButtons.put(ConfigService.COLOR_MAGENTA_TEXT, btnFontMagenta);
+        fontButtons.put(ConfigService. COLOR_MAGENTA_TEXT, btnFontMagenta);
         fontButtons.put(ConfigService.COLOR_GREEN_TEXT, btnFontGreen);
         fontButtons.put(ConfigService.COLOR_NUBANK_TEXT, btnFontNubank);
         fontButtons.put(ConfigService.COLOR_PINK_TEXT, btnFontPink);
-        fontButtons.put(ConfigService.COLOR_TXT_RED, btnFontRed);
-        fontButtons.put(ConfigService.COLOR_TXT_BROWN, btnFontBrown);
-        fontButtons.put(ConfigService.COLOR_CIANO_TEXT, btnFontCian);
-        fontButtons.put(ConfigService.COLOR_BLACK_TEXT, btnFontBlack);
-        fontButtons.put(ConfigService.COLOR_YELLOW_TEXT, btnFontYellow);
-        fontButtons.put(ConfigService.COLOR_DRAK_TEXT,btnFontDrak);
-        fontButtons.put(ConfigService.COLOR_LIGHT_TEXT,btnFontWhite);
-        fontButtons.put(ConfigService.COLOR_DARK_TEXT,btnFontDark);
-        fontButtons.put(ConfigService.COLOR_BLUE_TEXT, btnFontBlue);
-        fontButtons.put(ConfigService.COLOR_ORANGE_TEXT, btnFontOrange);
-        fontButtons.put(ConfigService.COLOR_BLUEDARK_TEXT ,btnFontBlueDark);
-        fontButtons.put(ConfigService.COLOR_TXT_RED, btnTxtRed);
-        fontButtons.put(ConfigService.COLOR_TXT_BROWN, btnTxtBrown);
-        fontButtons.put(ConfigService.COLOR_BLACK_TEXT, btnFontBlack2);
-        fontButtons.put(ConfigService.COLOR_DARK_TEXT, btnFontBlack);
+        fontButtons.put(ConfigService. COLOR_TXT_RED, btnTxtRed);
+        fontButtons.put(ConfigService. COLOR_TXT_BROWN, btnTxtBrown);
+        fontButtons.put(ConfigService. COLOR_CIANO_TEXT, btnFontCian);
+        fontButtons.put(ConfigService. COLOR_BLACK_TEXT, btnFontBlack2);
+        fontButtons.put(ConfigService. COLOR_YELLOW_TEXT, btnFontYellow);
+        fontButtons.put(ConfigService. COLOR_DRAK_TEXT,btnFontDrak);
+        fontButtons.put(ConfigService. COLO_LIGHT_TEXT,btnFontWhite);
+        fontButtons.put(ConfigService. COLO_DARK_TEXT,btnFontBlack);
+        fontButtons.put(ConfigService. COLO_BLUE_TEXT, btnFontBlue);
+        fontButtons.put(ConfigService. COLO_ORANGE_TEXT, btnFontOrange);
+        fontButtons.put(ConfigService. COLO_BLUEDARK_TEXT ,btnFontBlueDark);
+
 
         //Botões
-        buttonButtons.put(ConfigService.COLOR_DEFAULT_BLUE_BUTTON, btnButtonBlue);
-        buttonButtons.put(ConfigService.COLOR_PURPLE_BUTTON, btnButtonPurple);
-        buttonButtons.put(ConfigService.COLOR_MAGENTA_BUTTON, btnButtonMagenta);
+        buttonButtons.put(ConfigService. COLOR_DEFAULT_BLUE_BUTTON, btnFontBlue);
+        buttonButtons.put(ConfigService.COLOR_PURPLE_BUTTON, btnFontPurple);
+        buttonButtons.put(ConfigService. COLOR_MAGENTA_BUTTON, btnFontMagenta);
         buttonButtons.put(ConfigService.COLOR_GREEN_BUTTON, btnButtonGreen);
         buttonButtons.put(ConfigService.COLOR_NUBANK_BUTTON, btnButtonNubank);
         buttonButtons.put(ConfigService.COLOR_BTN_PINK, btnButtonPink);
-        buttonButtons.put(ConfigService.COLOR_BTN_RED, btnButtonRed);
-        buttonButtons.put(ConfigService.COLOR_BTN_BROWN, btnButtonBrown);
-        buttonButtons.put(ConfigService.COLOR_CIANO_BUTTON, btnButtonCian);
-        buttonButtons.put(ConfigService.COLOR_BLACK_BUTTON, btnButtonBlack);
-        buttonButtons.put(ConfigService.COLOR_BLACK_BUTTON, btnButtonBlack2);
-        buttonButtons.put(ConfigService.COLOR_YELLOW_BUTTON, btnButtonYellow);
-        buttonButtons.put(ConfigService.COLOR_DRAK_BUTTON, btnButtonDrak);
-        buttonButtons.put(ConfigService.COLOR_LIGHT_BUTTON, btnButtonLight);
-        buttonButtons.put(ConfigService.COLOR_DARK_BUTTON, btnButtonDark);
-        buttonButtons.put(ConfigService.COLOR_ORANGE_BUTTON, btnButtonOrange);
-        buttonButtons.put(ConfigService.COLOR_BLUEDARK_BUTTON, btnButtonBlueDark);
+        buttonButtons.put(ConfigService. COLOR_BTN_RED, btnButtonRed);
+        buttonButtons.put(ConfigService. COLOR_BTN_BROWN, btnButtonBrown);
+        buttonButtons.put(ConfigService. COLOR_CIANO_BUTTON, btnButtonCian);
+        buttonButtons.put(ConfigService. COLOR_BLACK_BUTTON, btnButtonBlack2);
+        buttonButtons.put(ConfigService. COLOR_YELLOW_BUTTON, btnButtonYellow);
+        buttonButtons.put(ConfigService. COLOR_DRAK_BUTTON, btnButtonDrak);
+        buttonButtons.put(ConfigService. COLOR_LIGHT_BUTTON, btnButtonLight);
+        buttonButtons.put(ConfigService. COLOR_DARK_BUTTON, btnButtonDark);
+        buttonButtons.put(ConfigService. COLOR_ORANGE_BUTTON, btnButtonOrange);
+        buttonButtons.put(ConfigService. COLOR_BLUEDARK_BUTTON, btnButtonBlueDark);
 
         //  BG
-        backgroundButtons.put(ConfigService.COLOR_BG_BLUE, btnBgBlue);
+        backgroundButtons.put(ConfigService. COLOR_DEFAULT_BLUE_BG, btnBGDefaut);
         backgroundButtons.put(ConfigService.COLOR_BG_PURPLE,  btnBgPurple);
-        backgroundButtons.put(ConfigService.COLOR_BG_MAGENTA, btnBgMagenta);
+        backgroundButtons.put(ConfigService. COLOR_BG_MAGENTA, btnBgMagenta);
         backgroundButtons.put(ConfigService.COLOR_BG_GREEN,  btnBgGreen);
         backgroundButtons.put(ConfigService.COLOR_BG_NUBANK, btnBgNubank);
-        backgroundButtons.put(ConfigService.COLOR_BG_PINK, btnBgPink);
-        backgroundButtons.put(ConfigService.COLOR_BACKGROUND_RED,  btnBgRed);
-        backgroundButtons.put(ConfigService.COLOR_DEFAULT_BLUE_BG, btnBGDefaut);
-        backgroundButtons.put(ConfigService.COLOR_BG_PURPLE, btnBgPurple);
-        backgroundButtons.put(ConfigService.COLOR_BG_MAGENTA, btnBgMagenta);
-        backgroundButtons.put(ConfigService.COLOR_BG_GREEN, btnBgGreen);
-        backgroundButtons.put(ConfigService.COLOR_BG_NUBANK, btnBgNubank);
         backgroundButtons.put(ConfigService.COLOR_BG_PINK, btnbgPink);
-        backgroundButtons.put(ConfigService.COLOR_BACKGROUND_RED, btnBgRed);
-        backgroundButtons.put(ConfigService.COLOR_BACKGROND_BROWN, btnBgBrown);
-        backgroundButtons.put(ConfigService.COLOR_BG_CIANO, btnBgCian);
-        backgroundButtons.put(ConfigService.COLOR_BG_BLACK, btnBgBlack);
-        backgroundButtons.put(ConfigService.COLOR_BG_YELLOW, btnBgYellow);
-        backgroundButtons.put(ConfigService.COLOR_BG_DRAK, btnBgDrak);
-        backgroundButtons.put(ConfigService.COLOR_BG_DRAK, btnBgDark);
-        backgroundButtons.put(ConfigService.COLOR_BG_LIGHT, btnBgLight);
-        backgroundButtons.put(ConfigService.COLOR_BG_DARK, btnBgDark);
-        backgroundButtons.put(ConfigService.COLOR_BG_ORANGE, btnBgOrange);
-        backgroundButtons.put(ConfigService.COLOR_BG_BLUEDARK, btnBgBlueDark);
-        backgroundButtons.put(ConfigService.COLOR_BG_ROXONUBANK, btnBgRoxoNubank);
+        backgroundButtons.put(ConfigService. COLOR_BACKGROUND_RED,  btnBgRed);
+        backgroundButtons.put(ConfigService. COLOR_BACKGROND_BROWN, btnBgBrown);
+        backgroundButtons.put(ConfigService. COLOR_BG_CIANO, btnBgCian);
+        backgroundButtons.put(ConfigService. COLOR_BG_BLACK, btnBgBlack);
+        backgroundButtons.put(ConfigService. COLOR_BG_YELLOW, btnBgYellow);
+        backgroundButtons.put(ConfigService. COLOR_BG_DRAK, btnBgDark);
+        backgroundButtons.put(ConfigService. COLOR_BG_LIGHT, btnBgLight);
+        backgroundButtons.put(ConfigService. COLOR_BG_DARK, btnBgDark);
+        backgroundButtons.put(ConfigService. COLOR_BG_ORANGE, btnBgOrange);
+        backgroundButtons.put(ConfigService. COLOR_BG_BLUEDARK, btnBgBlueDark);
+        backgroundButtons.put(ConfigService. COLOR_BG_BLUE, btnBgBlue);
+        backgroundButtons.put(ConfigService. COLOR_BG_ROXONUBANK, btnBgRoxoNubank);
 
         // Sidebar
-        sidebarButtons.put(ConfigService.COLOR_SIDEBAR_DEFAULT, btnSidebarDefault);
+        sidebarButtons.put(ConfigService. COLOR_SIDEBAR_DEFAULT, btnSidebarDefault);
         sidebarButtons.put(ConfigService.COLOR_SIDEBAR_PURPLE, btnSidebarPurple);
-        sidebarButtons.put(ConfigService.COLOR_SIDEBAR_MAGENTA, btnSidebarMagenta);
+        sidebarButtons.put(ConfigService. COLOR_SIDEBAR_MAGENTA, btnSidebarMagenta);
         sidebarButtons.put(ConfigService.COLOR_SIDEBAR_GREEN, btnSidebarGreen);
         sidebarButtons.put(ConfigService.COLOR_SIDEBAR_NUBANK, btnSidebarNubank);
-        sidebarButtons.put(ConfigService.COLOR_SIDEBAR_PINK, btnSidebarPink);
         sidebarButtons.put(ConfigService.COLOR_SIDEBAR_PINK, btnSidebarPurple);
-        sidebarButtons.put(ConfigService.COLOR_SIDEBAR_RED, btnSidebarRed);
-        sidebarButtons.put(ConfigService.COLOR_SIDEBAR_BROWN, btnSidebarBrown);
-        sidebarButtons.put(ConfigService.COLOR_SIDEBAR_CIANO, btnSidebarCian);
-        sidebarButtons.put(ConfigService.COLOR_SIDEBAR_BLACK, btnSidebarBlack);
-        sidebarButtons.put(ConfigService.COLOR_SIDEBAR_YELLOW, btnSidebarYellow);
-        sidebarButtons.put(ConfigService.COLOR_SIDEBAR_DRAK, btnSidebarDrak);
-        sidebarButtons.put(ConfigService.COLOR_SIDEBAR_DRAK, btnSidebarDark);
-        sidebarButtons.put(ConfigService.COLOR_SIDEBAR_LIGHT, btnSidebarLight);
-        sidebarButtons.put(ConfigService.COLOR_SIDEBAR_DARK, btnSidebarDark); 
-        sidebarButtons.put(ConfigService.COLOR_SIDEBAR_BLUE, btnSidebarBlue);
-        sidebarButtons.put(ConfigService.COLOR_SIDEBAR_BLUEDARK, btnSidebarBlueDark);
-        sidebarButtons.put(ConfigService.COLOR_SIDEBAR_ORANGE, btnSidebarOrange);
-        sidebarButtons.put(ConfigService.COLOR_SIDEBAR_ROXONUBANK, btnSidebarRoxoNubank);
+        sidebarButtons.put(ConfigService. COLOR_SIDEBAR_RED, btnSidebarRed);
+        sidebarButtons.put(ConfigService. COLOR_SIDEBAR_BROWN, btnSidebarBrown);
+        sidebarButtons.put(ConfigService. COLOR_SIDEBAR_CIANO, btnSidebarCian);
+        sidebarButtons.put(ConfigService. COLOR_SIDEBAR_BLACK, btnSidebarBlack);
+        sidebarButtons.put(ConfigService. COLOR_SIDEBAR_YELLOW, btnSidebarYellow);
+        sidebarButtons.put(ConfigService. COLOR_SIDEBAR_DRAK, btnSidebarDark);
+        sidebarButtons.put(ConfigService. COLOR_SIDEBAR_LIGHT, btnSidebarLight);
+        sidebarButtons.put(ConfigService. COLOR_SIDEBAR_DARK, btnSidebarDark);
+        sidebarButtons.put(ConfigService. COLOR_SIDEBAR_BLUE, btnSidebarBlue);
+        sidebarButtons.put(ConfigService. COLOR_SIDEBAR_BLUEDARK, btnSidebarBlueDark);
+        sidebarButtons.put(ConfigService. COLOR_SIDEBAR_ROXONUBANK, btnSidebarRoxoNubank);
+
+        //Border
+
+        borderButtons.put(ConfigService. COLOR_BORDER_DEFAULT, btnBorderDefault);
+        borderButtons.put(ConfigService.COLOR_BORDER_PURPLE, btnBorderPurple);
+        borderButtons.put(ConfigService. COLOR_BORDER_MAGENTA, btnBorderMagenta);
+        borderButtons.put(ConfigService.COLOR_BORDER_GREEN, btnBorderGreen);
+        borderButtons.put(ConfigService.COLOR_BORDER_NUBANK, btnBorderNubank);
+        borderButtons.put(ConfigService.COLOR_BORDER_PINK, btnBorderPurple);
+        borderButtons.put(ConfigService. COLOR_BORDER_RED, btnBorderRed);
+        borderButtons.put(ConfigService. COLOR_BORDER_BROWN, btnBorderBrown);
+        borderButtons.put(ConfigService. COLOR_BORDER_CIANO, btnBorderCian);
+        borderButtons.put(ConfigService. COLOR_BORDER_BLACK, btnBorderBlack);
+        borderButtons.put(ConfigService. COLOR_BORDER_YELLOW, btnBorderYellow);
+        borderButtons.put(ConfigService. COLOR_BORDER_DRAK, btnBorderDark);
+        borderButtons.put(ConfigService. COLOR_BORDER_LIGHT, btnBorderLight);
+        borderButtons.put(ConfigService. COLOR_BORDER_DARK, btnBorderDark);
+        borderButtons.put(ConfigService. COLOR_BORDER_BLUE, btnBorderBlue);
+        borderButtons.put(ConfigService. COLOR_BORDER_BLUEDARK, btnBorderBlueDark);
+        borderButtons.put(ConfigService. COLOR_BORDER_ROXONUBANK, btnBorderRoxoNubank);
     }
 
     private void loadAndApplyCurrentThemeSelection() {
@@ -294,16 +312,8 @@ public class ConfigController {
         updateButtonSelection(buttonButtons, configService.getButtonColor());
         updateButtonSelection(backgroundButtons, configService.getBackgroundColor());
         updateButtonSelection(sidebarButtons, configService.getSidebarColor());
+        updateButtonSelection(borderButtons, configService.getBorderColor());
     }
-
-    private void showAlert(String title, String header) {
-        Alert alert = new Alert(Alert.AlertType.WARNING);
-        alert.setTitle(title);
-        alert.setHeaderText(header);
-        alert.showAndWait();
-
-    }
-
 
     @FXML
     private void handleThemeChange(ActionEvent event) {
@@ -315,27 +325,6 @@ public class ConfigController {
         String[] parts = userData.split(":");
         String type = parts[0];
         String colorValue = parts[1];
-        String currentFontColor = configService.getFontColor();
-        String currentBackgroundColor = configService.getBackgroundColor();
-        String currentSidebarColor = configService.getSidebarColor();
-        String currentButtonsColor = configService.getButtonColor();
-
-        if (type.equals("font") && colorValue.equals(currentBackgroundColor) || type.equals("background") && colorValue.equals(currentFontColor)) {
-            showAlert("Conflito de cores", "As cores de texto e fundo estão se contrastando");
-            return;
-        }else if (type.equals("button") && colorValue.equals(currentFontColor) || type.equals("font") && colorValue.equals(currentButtonsColor)) {
-            showAlert("Conflito de cores", "As cores de texto e botão estão se contrastando");
-            return;
-        }else if (type.equals("sidebar") && colorValue.equals(currentFontColor) || type.equals("font") && colorValue.equals(currentSidebarColor)) {
-            showAlert("Conflito de cores", "As cores de texto e sidebar estão se contrastando");
-            return;
-        }else if (type.equals("sidebar") && colorValue.equals(currentButtonsColor) || type.equals("button") && colorValue.equals(currentSidebarColor)) {
-            showAlert("Conflito de cores", "As cores de botão e sidebar estão se contrastando");
-            return;
-        }
-
-
-
 
         Map<String, Button> currentGroup = null;
 
@@ -359,6 +348,10 @@ public class ConfigController {
                 configService.setSidebarColor(colorValue);
                 currentGroup = sidebarButtons;
                 break;
+            case "border":
+                configService.setBorderColor(colorValue);
+                currentGroup = borderButtons;
+                break;
 
             default:
                 return;
@@ -368,7 +361,6 @@ public class ConfigController {
         applyStyleChange(null, null);
 
     }
-
     private void updateButtonSelection(Map<String, Button> buttonGroup, String selectedValue) {
         if (buttonGroup == null) return;
 
@@ -388,7 +380,6 @@ public class ConfigController {
                 button.setDisable(isSelected);
             }
         });
-
     }
 
 
@@ -403,5 +394,4 @@ public class ConfigController {
             }
         }
     }
-
 }
