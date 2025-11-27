@@ -12,6 +12,10 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.HBox;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
+
+import java.util.Optional;
 
 
 public class ContatoListController {
@@ -140,9 +144,29 @@ public class ContatoListController {
                 });
                 btnExcluir.setOnAction(event -> {
                     Contato contato = getTableView().getItems().get(getIndex());
-                    contatoService.excluirContato(contato);
-                    NotificationUtil.showSuccessToast(tableView,"Contato excluído com sucesso!");
-                    refreshTableData();
+                    // ALERTA DE CONFIRMAÇÃO
+                    Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+                    alert.setTitle("Excluir Contato");
+                    alert.setHeaderText("Tem certeza que deseja excluir este contato?");
+                    alert.setContentText("Esta ação não poderá ser desfeita.");
+
+                    Optional<ButtonType> result = alert.showAndWait();
+
+                    if (result.isPresent() && result.get() == ButtonType.OK) {
+
+                        contatoService.excluirContato(contato);
+                        NotificationUtil.showSuccessToast(
+                                tableView,
+                                "Contato excluído com sucesso!"
+                        );
+                        refreshTableData();
+
+                    } else {
+                        NotificationUtil.showSuccessToast(
+                                tableView,
+                                "Exclusão cancelada!"
+                        );
+                    }
                 });
             }
 
