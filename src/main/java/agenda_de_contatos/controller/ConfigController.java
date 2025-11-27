@@ -27,6 +27,7 @@ public class ConfigController {
     @FXML private Label passLabel;
     @FXML private Label storageStatusLabel;
 
+    // Botões de Fonte (Font Buttons)
     @FXML private Button btnFontBlue;
     @FXML private Button btnFontPurple;
     @FXML private Button btnFontMagenta;
@@ -43,7 +44,13 @@ public class ConfigController {
     @FXML private Button btnFontWhite;
     @FXML private Button btnFontBlack;
     @FXML private Button btnFontDark;
+    @FXML private Button btnFontBlack2;
+    @FXML private Button btnTxtBrown;
+    @FXML private Button btnTxtRed;
 
+
+    // Botões de Componentes (Button Buttons)
+    @FXML private Button btnButtonWhite;
     @FXML private Button btnButtonBlue;
     @FXML private Button btnButtonOrange;
     @FXML private Button btnButtonYellow;
@@ -59,7 +66,10 @@ public class ConfigController {
     @FXML private Button btnButtonDark;
     @FXML private Button btnButtonBlueDark;
     @FXML private Button btnButtonLight;
+    @FXML private Button btnButtonBlack2;
 
+
+    // Botões de Fundo (Background Buttons)
     @FXML private Button btnBgLight;
     @FXML private Button btnBgDark;
     @FXML private Button btnBgBlue;
@@ -76,8 +86,13 @@ public class ConfigController {
     @FXML private Button btnBgBrown;
     @FXML private Button btnBgOrange;
     @FXML private Button btnBgDrak;
-    //@FXML private Button btnBgRoxoNubank;
+    @FXML private Button BtnButtonBrown;
+    @FXML private Button btnBGDefaut;
+    @FXML private Button btnbgPink;
+    @FXML private Button btnBgRoxoNubank;
 
+
+    // Botões de Sidebar (Sidebar Buttons)
     @FXML private Button btnSidebarBlack;
     @FXML private Button btnSidebarCian;
     @FXML private Button btnSidebarLight;
@@ -94,176 +109,12 @@ public class ConfigController {
     @FXML private Button btnSidebarDrak;
     @FXML private Button btnSidebarOrange;
     @FXML private Button btnSidebarPink;
-    //@FXML private Button btnSidebarRoxoNubank;
+    @FXML private Button btnSidebarBlack2;
+    @FXML private Button btnSidebarDefault;
+    @FXML private Button btnSidebarRoxoNubank;
 
     @FXML private Label configStatusLabel;
     @FXML private TabPane tabPane;
-
-    @FXML
-    private ChoiceBox<String> storageChoiceBox;
-    @FXML
-    private TextField hostField;
-    @FXML
-    private TextField userField;
-    @FXML
-    private PasswordField passField;
-    @FXML
-    private Button testButton;
-    @FXML
-    private Label hostLabel;
-    @FXML
-    private Label userLabel;
-    @FXML
-    private Label passLabel;
-    @FXML
-    private Label storageStatusLabel;
-
-    @FXML
-    private Button btnFontWhite;
-    @FXML
-    private Button btnFontBlack;
-    @FXML
-    private Button btnFontBlue;
-    @FXML
-    private Button btnFontPurple;
-    @FXML
-    private Button btnFontMagenta;
-    @FXML
-    private Button btnFontYellow;
-    @FXML
-    private Button btnFontGreen;
-    @FXML
-    private Button btnFontNubank;
-    @FXML
-    private Button btnFontPink;
-    @FXML
-    private Button btnFontBlack2;
-    @FXML
-    private Button btnFontCian;
-    @FXML
-    private Button btnFontBlueDark;
-    @FXML
-    private Button btnFontDrak;
-    @FXML
-    private Button btnFontOrange;
-
-    @FXML
-    private Button btnButtonWhite;
-    @FXML
-    private Button btnButtonBlue;
-    @FXML
-    private Button btnButtonOrange;
-    @FXML
-    private Button btnButtonYellow;
-    @FXML
-    private Button btnButtonBrown;
-    @FXML
-    private Button btnButtonGreen;
-    @FXML
-    private Button btnButtonNubank;
-    @FXML
-    private Button btnButtonRed;
-    @FXML
-    private Button btnButtonPurple;
-    @FXML
-    private Button btnButtonMagenta;
-    @FXML
-    private Button btnButtonBlack2;
-    @FXML
-    private Button btnButtonCian;
-    @FXML
-    private Button btnButtonPink;
-    @FXML
-    private Button btnButtonLight;
-    @FXML
-    private Button btnButtonDark;
-    @FXML
-    private Button btnButtonBlueDark;
-
-    @FXML
-    private Button btnBgLight;
-    @FXML
-    private Button btnBgDark;
-    @FXML
-    private Button btnBgBlue;
-    @FXML
-    private Button btnBgYellow;
-    @FXML
-    private Button btnBgGreen;
-    @FXML
-    private Button btnBgRed;
-    @FXML
-    private Button btnBgNubank;
-    @FXML
-    private Button btnBgPurple;
-    @FXML
-    private Button btnBgMagenta;
-    @FXML
-    private Button btnBgBlack;
-    @FXML
-    private Button btnBgCian;
-    @FXML
-    private Button btnBgBlueDark;
-    @FXML
-    private Button btnBgDrak;
-    @FXML
-    private Button BtnButtonBrown;
-    @FXML
-    private Button btnBGDefaut;
-    @FXML
-    private Button btnbgPink;
-    @FXML
-    private Button btnBgBrown;
-    @FXML
-    private Button btnBgOrange;
-    @FXML
-    private Button btnBgRoxoNubank;
-
-    @FXML
-    private Button btnSidebarBlack;
-    @FXML
-    private Button btnSidebarCian;
-    @FXML
-    private Button btnSidebarLight;
-    @FXML
-    private Button btnSidebarDark;
-    @FXML
-    private Button btnSidebarBlue;
-    @FXML
-    private Button btnSidebarPurple;
-    @FXML
-    private Button btnSidebarMagenta;
-    @FXML
-    private Button btnSidebarYellow;
-    @FXML
-    private Button btnSidebarRed;
-    @FXML
-    private Button btnSidebarGreen;
-    @FXML
-    private Button btnSidebarBrown;
-    @FXML
-    private Button btnSidebarNubank;
-    @FXML
-    private Button btnSidebarBlack2;
-    @FXML
-    private Button btnSidebarDrak;
-    @FXML
-    private Button btnSidebarBlueDark;
-    @FXML
-    private Button btnSidebarDefault;
-    @FXML
-    private Button btnSidebarRoxoNubank;
-
-
-    @FXML
-    private Button btnTxtBrown;
-    @FXML
-    private Button btnTxtRed;
-
-    @FXML
-    private Label configStatusLabel;
-    @FXML
-    private TabPane tabPane;
 
     private MainController mainController;
     private ConfigService configService;
@@ -359,33 +210,20 @@ public class ConfigController {
         fontButtons.put(ConfigService.COLOR_BLACK_TEXT, btnFontBlack);
         fontButtons.put(ConfigService.COLOR_YELLOW_TEXT, btnFontYellow);
         fontButtons.put(ConfigService.COLOR_DRAK_TEXT,btnFontDrak);
-        fontButtons.put(ConfigService.COLO_LIGHT_TEXT,btnFontWhite);
-        fontButtons.put(ConfigService.COLO_DARK_TEXT,btnFontDark);
-        fontButtons.put(ConfigService.COLO_BLUE_TEXT, btnFontBlue);
-        fontButtons.put(ConfigService.COLO_ORANGE_TEXT, btnFontOrange);
-        fontButtons.put(ConfigService.COLO_BLUEDARK_TEXT ,btnFontBlueDark);
+        fontButtons.put(ConfigService.COLOR_LIGHT_TEXT,btnFontWhite);
+        fontButtons.put(ConfigService.COLOR_DARK_TEXT,btnFontDark);
+        fontButtons.put(ConfigService.COLOR_BLUE_TEXT, btnFontBlue);
+        fontButtons.put(ConfigService.COLOR_ORANGE_TEXT, btnFontOrange);
+        fontButtons.put(ConfigService.COLOR_BLUEDARK_TEXT ,btnFontBlueDark);
+        fontButtons.put(ConfigService.COLOR_TXT_RED, btnTxtRed);
+        fontButtons.put(ConfigService.COLOR_TXT_BROWN, btnTxtBrown);
+        fontButtons.put(ConfigService.COLOR_BLACK_TEXT, btnFontBlack2);
+        fontButtons.put(ConfigService.COLOR_DARK_TEXT, btnFontBlack);
 
         //Botões
         buttonButtons.put(ConfigService.COLOR_DEFAULT_BLUE_BUTTON, btnButtonBlue);
         buttonButtons.put(ConfigService.COLOR_PURPLE_BUTTON, btnButtonPurple);
         buttonButtons.put(ConfigService.COLOR_MAGENTA_BUTTON, btnButtonMagenta);
-        fontButtons.put(ConfigService.COLOR_TXT_RED, btnTxtRed);
-        fontButtons.put(ConfigService.COLOR_TXT_BROWN, btnTxtBrown);
-        fontButtons.put(ConfigService.COLOR_CIANO_TEXT, btnFontCian);
-        fontButtons.put(ConfigService.COLOR_BLACK_TEXT, btnFontBlack2);
-        fontButtons.put(ConfigService.COLOR_YELLOW_TEXT, btnFontYellow);
-        fontButtons.put(ConfigService.COLOR_DRAK_TEXT, btnFontDrak);
-        fontButtons.put(ConfigService.COLO_LIGHT_TEXT, btnFontWhite);
-        fontButtons.put(ConfigService.COLO_DARK_TEXT, btnFontBlack);
-        fontButtons.put(ConfigService.COLO_BLUE_TEXT, btnFontBlue);
-        fontButtons.put(ConfigService.COLO_ORANGE_TEXT, btnFontOrange);
-        fontButtons.put(ConfigService.COLO_BLUEDARK_TEXT, btnFontBlueDark);
-
-
-        //Botões
-        buttonButtons.put(ConfigService.COLOR_DEFAULT_BLUE_BUTTON, btnFontBlue);
-        buttonButtons.put(ConfigService.COLOR_PURPLE_BUTTON, btnFontPurple);
-        buttonButtons.put(ConfigService.COLOR_MAGENTA_BUTTON, btnFontMagenta);
         buttonButtons.put(ConfigService.COLOR_GREEN_BUTTON, btnButtonGreen);
         buttonButtons.put(ConfigService.COLOR_NUBANK_BUTTON, btnButtonNubank);
         buttonButtons.put(ConfigService.COLOR_BTN_PINK, btnButtonPink);
@@ -426,10 +264,6 @@ public class ConfigController {
         backgroundButtons.put(ConfigService.COLOR_BG_DARK, btnBgDark);
         backgroundButtons.put(ConfigService.COLOR_BG_ORANGE, btnBgOrange);
         backgroundButtons.put(ConfigService.COLOR_BG_BLUEDARK, btnBgBlueDark);
-        //backgroundButtons.put(ConfigService.COLOR_BG_ROXONUBANK, btnBgRoxoNubank);
-
-        // Sidebar
-        backgroundButtons.put(ConfigService.COLOR_BG_BLUE, btnBgBlue);
         backgroundButtons.put(ConfigService.COLOR_BG_ROXONUBANK, btnBgRoxoNubank);
 
         // Sidebar
@@ -448,11 +282,10 @@ public class ConfigController {
         sidebarButtons.put(ConfigService.COLOR_SIDEBAR_DRAK, btnSidebarDrak);
         sidebarButtons.put(ConfigService.COLOR_SIDEBAR_DRAK, btnSidebarDark);
         sidebarButtons.put(ConfigService.COLOR_SIDEBAR_LIGHT, btnSidebarLight);
-        sidebarButtons.put(ConfigService.COLOR_SIDEBAR_DARK, btnSidebarDark);
+        sidebarButtons.put(ConfigService.COLOR_SIDEBAR_DARK, btnSidebarDark); 
         sidebarButtons.put(ConfigService.COLOR_SIDEBAR_BLUE, btnSidebarBlue);
         sidebarButtons.put(ConfigService.COLOR_SIDEBAR_BLUEDARK, btnSidebarBlueDark);
         sidebarButtons.put(ConfigService.COLOR_SIDEBAR_ORANGE, btnSidebarOrange);
-        //sidebarButtons.put(ConfigService.COLOR_SIDEBAR_ROXONUBANK, btnSidebarRoxoNubank);
         sidebarButtons.put(ConfigService.COLOR_SIDEBAR_ROXONUBANK, btnSidebarRoxoNubank);
     }
 
@@ -497,8 +330,8 @@ public class ConfigController {
             showAlert("Conflito de cores", "As cores de texto e sidebar estão se contrastando");
             return;
         }else if (type.equals("sidebar") && colorValue.equals(currentButtonsColor) || type.equals("button") && colorValue.equals(currentSidebarColor)) {
-                showAlert("Conflito de cores", "As cores de botão e sidebar estão se contrastando");
-                return;
+            showAlert("Conflito de cores", "As cores de botão e sidebar estão se contrastando");
+            return;
         }
 
 
@@ -572,6 +405,3 @@ public class ConfigController {
     }
 
 }
-
-
-
