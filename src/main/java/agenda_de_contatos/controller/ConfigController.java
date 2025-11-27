@@ -266,6 +266,13 @@ public class ConfigController {
         updateButtonSelection(sidebarButtons, configService.getSidebarColor());
     }
 
+    private void showAlert(String title, String header) {
+        Alert alert = new Alert(Alert.AlertType.WARNING);
+        alert.setTitle(title);
+        alert.setHeaderText(header);
+        alert.showAndWait();
+    }
+
     @FXML
     private void handleThemeChange(ActionEvent event) {
         Button clickedButton = (Button) event.getSource();
@@ -276,6 +283,24 @@ public class ConfigController {
         String[] parts = userData.split(":");
         String type = parts[0];
         String colorValue = parts[1];
+        String currentFontColor = configService.getFontColor();
+        String currentBgColor = configService.getBackgroundColor();
+        String currentSidebarColor = configService.getSidebarColor();
+        String currentButtonColor = configService.getButtonColor();
+
+        if (type.equals("font") && colorValue.equals(currentBgColor)||type.equals("background") && colorValue.equals(currentFontColor)) {
+            showAlert("Conflito de cores", "As cores de texto e fundo estão contrastando");
+            return;
+        } else if (type.equals("button") && colorValue.equals(currentFontColor)){
+            showAlert("Conflito de cores", "As cores de texto e botão estão contrastando");
+            return;
+        } else if (type.equals("sidebar") && colorValue.equals(currentButtonColor) || type.equals("button") && colorValue.equals(currentSidebarColor)){
+            showAlert("Conflito de cores", "As cores de botão e sidebar estão contrastando");
+            return;
+        } else if (type.equals("sidebar") && colorValue.equals(currentFontColor) || type.equals("font") && colorValue.equals(currentSidebarColor)){
+            showAlert("Conflito de cores", "As cores de texto e sidebar estão contrastando");
+            return;
+        }
 
         Map<String, Button> currentGroup = null;
 
