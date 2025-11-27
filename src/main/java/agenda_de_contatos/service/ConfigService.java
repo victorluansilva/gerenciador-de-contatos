@@ -20,7 +20,7 @@ public class ConfigService {
     public static final String COLOR_BLACK = "#333333";
 
     //COLOR TEXT
-    public static final String COLOR_BLUE_TEXT = "#ECF0F1";
+    public static final String COLOR_BLUE_TEXT = "#4A89F3";
     public static final String COLOR_PURPLE_TEXT = "#8A2BE2";
     public static final String COLOR_MAGENTA_TEXT = "#FF00FF";
     public static final String COLOR_GREEN_TEXT = "#2CFF05";
@@ -58,7 +58,6 @@ public class ConfigService {
 
 
     //COLOR BG
-    public static final String COLOR_DEFAULT_BLUE_BG = "#4A89F3";
     public static final String COLOR_BACKGROND_BROWN = "#895129";
     public static final String COLOR_BACKGROUND_RED = "FF0000";
     public static final String COLOR_BG_PURPLE = "#8A2BE2";
@@ -70,7 +69,7 @@ public class ConfigService {
     public static final String COLOR_BG_BLUE = "#4A89F3";
     public static final String COLOR_BG_GREEN = "#2CFF05";
     public static final String COLOR_BG_BLACK = "000000";
-    public static final String COLOR_BG_ROXONUBANK= "#820AD1";
+    //public static final String COLOR_BG_ROXONUBANK= "#820AD1";
     public static final String COLOR_BG_CIANO = "#00FFFF";
     public static final String COLOR_BG_DRAK = "#2C3E50";
     public static final String COLOR_BG_BLUEDARK = "#554af3";
@@ -88,13 +87,14 @@ public class ConfigService {
     public static final String COLOR_SIDEBAR_LIGHT = "#FFFFFF";
     public static final String COLOR_SIDEBAR_DARK = "#3C3E50";
     public static final String COLOR_SIDEBAR_BLACK = "#000000";
-    public static final String COLOR_SIDEBAR_ROXONUBANK = "#820AD1";
+    //public static final String COLOR_SIDEBAR_ROXONUBANK = "#820AD1";
     public static final String COLOR_SIDEBAR_DRAK = "#2C3E50";
     public static final String COLOR_SIDEBAR_BLUE =  "#4A89F3";
     public static final String COLOR_SIDEBAR_YELLOW = "#E6E600";
     public static final String COLOR_SIDEBAR_GREEN = "#2CFF05";
     public static final String COLOR_SIDEBAR_NUBANK = "#D3D3D3";
     public static final String COLOR_SIDEBAR_PINK = "#FFC0CB";
+    public static final String COLOR_SIDEBAR_ORANGE = "#f0ad4e";
 
 
 
