@@ -24,7 +24,7 @@
 
                 <TabPane fx:id="tabPane" tabClosingPolicy="UNAVAILABLE" VBox.vgrow="ALWAYS">
                     <tabs>
-                        <Tab text="Tema">
+                        <Tab text="Tema"> <tooltip><Tooltip text="Aqui você vai escolher seu tema"/></tooltip>
                             <content>
                                 <ScrollPane fitToHeight="true" fitToWidth="false" hbarPolicy="AS_NEEDED" vbarPolicy="AS_NEEDED" style="-fx-background-color: transparent;">
                                     <content>
@@ -107,7 +107,7 @@
                                 </ScrollPane>
                             </content>
                         </Tab>
-                        <Tab text="Armazenamento">
+                        <Tab text="Armazenamento"><tooltip><Tooltip text="Escolha de onde seus contatos vão ser armazenados"/></tooltip>
                             <content>
                                 <VBox alignment="TOP_LEFT" spacing="15.0">
                                     <padding>
@@ -138,8 +138,8 @@
                                     </GridPane>
                                     <HBox alignment="CENTER_LEFT" spacing="10.0">
                                         <children>
-                                            <Button fx:id="testButton" onAction="#handleTestar" text="Testar MySQL" />
-                                            <Button onAction="#handleSalvarStorage" text="Salvar Armazenamento" />
+                                            <Button fx:id="testButton" onAction="#handleTestar" text="Testar MySQL" ><tooltip><Tooltip text="Teste do Bnaco de Dados"/></tooltip></Button>
+                                            <Button onAction="#handleSalvarStorage" text="Salvar Armazenamento" ><tooltip><Tooltip text="Salva sua escolha de armazenamento."/></tooltip></Button>
                                             <Label fx:id="storageStatusLabel" />
                                         </children>
                                         <VBox.margin>
