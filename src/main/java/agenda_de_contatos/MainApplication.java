@@ -32,6 +32,7 @@ public class MainApplication extends Application {
         String font = configService.getFontColor();
         String button = configService.getButtonColor();
         String sidebar = configService.getSidebarColor();
+        String border = configService.getBorderColor();
 
         String style = String.format(
                 // Cores de Fundo
@@ -50,16 +51,18 @@ public class MainApplication extends Application {
                         "-table-cell-text-color: %s; " +
                         "-input-text-color: %s;",
 
+
                 bg,       // 1. -background-base
                 sidebar,  // 2. -sidebar-background
                 button,   // 3. -button-color
-                button,   // 4. -input-focus-border-color
+                border,   // 4. -input-focus-border-color
                 font,     // 5. -text-color
                 font,     // 6. -sidebar-text-color
                 font,     // 7. -button-text-color
                 font,     // 8. -table-header-text-color
                 font,     // 9. -table-cell-text-color
                 font      // 10. -input-text-color
+
         );
 
         root.setStyle(style);

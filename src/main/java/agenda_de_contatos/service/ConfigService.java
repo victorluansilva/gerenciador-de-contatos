@@ -96,7 +96,25 @@ public class ConfigService {
     public static final String COLOR_SIDEBAR_NUBANK = "#D3D3D3";
     public static final String COLOR_SIDEBAR_PINK = "#FFC0CB";
 
+  //COLOR BORDER
 
+    public static final String COLOR_BORDER_DEFAULT = "#34495E";
+    public static final String COLOR_BORDER_PURPLE = "#8A2BE2";
+    public static final String COLOR_BORDER_MAGENTA = "#FF00FF";
+    public static final String COLOR_BORDER_RED = "FF0000";
+    public static final String COLOR_BORDER_BROWN = "#895129";
+    public static final String COLOR_BORDER_CIANO = "#00FFFF";
+    public static final String COLOR_BORDER_BLUEDARK = "#554af3";
+    public static final String COLOR_BORDER_LIGHT = "#FFFFFF";
+    public static final String COLOR_BORDER_DARK = "#3C3E50";
+    public static final String COLOR_BORDER_BLACK = "#000000";
+    public static final String COLOR_BORDER_ROXONUBANK = "#820AD1";
+    public static final String COLOR_BORDER_DRAK = "#2C3E50";
+    public static final String COLOR_BORDER_BLUE =  "#4A89F3";
+    public static final String COLOR_BORDER_YELLOW = "#E6E600";
+    public static final String COLOR_BORDER_GREEN = "#2CFF05";
+    public static final String COLOR_BORDER_NUBANK = "#D3D3D3";
+    public static final String COLOR_BORDER_PINK = "#FFC0CB";
 
     public static final String COLOR_TEXT_BG_ROXONUBANK= "#820AD1";
     public static final String COLOR_TEXT_BG_ROXONUBANK1= "#820AD1";
@@ -117,6 +135,7 @@ public class ConfigService {
             props.setProperty("ui.theme.font", COLOR_WHITE);
             props.setProperty("ui.theme.button", COLOR_DEFAULT_BLUE_BUTTON);
             props.setProperty("ui.theme.sidebar", COLOR_SIDEBAR_DEFAULT);
+            props.setProperty("ui.theme.border", COLOR_BORDER_DEFAULT);
             saveConfig();
         }
     }
@@ -196,10 +215,19 @@ public class ConfigService {
     public String getSidebarColor() {
         return getColorProperty("ui.theme.sidebar", COLOR_SIDEBAR_DEFAULT);
     }
+
     public void setSidebarColor(String colorHex) {
         props.setProperty("ui.theme.sidebar", colorHex);
         saveConfig();
     }
 
+    public String getBorderColor() {
+        return getColorProperty("ui.theme.border", COLOR_BORDER_DEFAULT);
+    }
+
+    public void setBorderColor(String colorHex) {
+        props.setProperty("ui.theme.border", colorHex);
+        saveConfig();
+    }
 
 }
