@@ -1,6 +1,5 @@
 package agenda_de_contatos.controller;
 
-
 import agenda_de_contatos.model.Contato;
 import agenda_de_contatos.service.ContatoService;
 import agenda_de_contatos.util.NotificationUtil;
@@ -12,7 +11,13 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.HBox;
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.List;
 
 public class ContatoListController {
 
@@ -46,7 +51,6 @@ public class ContatoListController {
         this.mainController = mainController;
     }
 
-
     public void initialize(){
         contatoService = new ContatoService();
         setupTableColumns();
@@ -73,9 +77,9 @@ public class ContatoListController {
                 if (contato.getNome() != null && contato.getNome().toLowerCase().contains(lowerCaseFilter)) {
                     return true;
                 }
-                 else if (contato.getTelefone() != null && contato.getTelefone().contains(newValue)) {
-                   return true;
-                 }
+                else if (contato.getTelefone() != null && contato.getTelefone().contains(newValue)) {
+                    return true;
+                }
                 return false;
             });
         });
@@ -84,7 +88,6 @@ public class ContatoListController {
         sortedData.comparatorProperty().bind(tableView.comparatorProperty());
         tableView.setItems(sortedData);
     }
-
 
     private void atualizarStatusConexao(){
         if (contatoService.isConexaoMySQL()) {
@@ -116,14 +119,12 @@ public class ContatoListController {
         contatoService.sincronizarComBanco();
         loadDataAndSetupFilter();
         atualizarStatusConexao();
-
     }
 
     private void refreshTableData() {
         loadDataAndSetupFilter();
         atualizarStatusConexao();
     }
-
 
     private void adicionarBotoesDeAcao() {
         colAcoes.setCellFactory(param -> new TableCell<>() {
@@ -158,6 +159,46 @@ public class ContatoListController {
     private void handleAdicionarContato() {
         if (mainController != null) {
             mainController.showEditForm(null);
+        }
+    }
+
+    @FXML
+    private void handleExportar() {
+
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("Exportar contatos");
+        fileChooser.getExtensionFilters().add(
+                new FileChooser.ExtensionFilter("Arquivo VCF (*.vcf)", "*.vcf")
+        );
+        Stage stage = (Stage) tableView.getScene().getWindow();
+
+
+        File arquivo = fileChooser.showSaveDialog(stage);
+        if (arquivo == null) return;
+
+        exportarContatos(arquivo);
+    }
+
+    private void exportarContatos(File arquivo) {
+
+        try (FileWriter fw = new FileWriter(arquivo)) {
+
+            List<Contato> contatos = contatoService.listarContatos();
+
+            fw.write("Nome;Telefone;Email\n"); // cabeçalho
+
+            for (Contato c : contatos) {
+                fw.write(
+                        (c.getNome() != null ? c.getNome() : "") + ";" +
+                                (c.getTelefone() != null ? c.getTelefone() : "") + ";" +
+                                (c.getEmail() != null ? c.getEmail() : "") +
+                                "\n"
+                );
+            }
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }

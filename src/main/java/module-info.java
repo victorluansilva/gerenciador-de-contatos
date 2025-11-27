@@ -13,6 +13,7 @@ module agenda_de_contatos {
 
     requires org.xerial.sqlitejdbc;
     requires org.slf4j.simple;
+    requires java.desktop;
 
 
     opens agenda_de_contatos to javafx.fxml;

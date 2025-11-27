@@ -5,18 +5,25 @@ import agenda_de_contatos.model.Contato;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
+import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.application.Platform;
-
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
+import java.io.File;
 import java.io.IOException;
 
 public class MainController {
 
     @FXML
     private AnchorPane contentPane;
+
     @FXML
     private BorderPane mainPane;
+
+    @FXML
+    private Button btnExportar;
 
     @FXML
     public void initialize() {
@@ -25,6 +32,21 @@ public class MainController {
 
     public BorderPane getMainPane() {
         return mainPane;
+    }
+
+    @FXML
+    private void handleExportar() {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("Salvar contatos como .vcf");
+        fileChooser.getExtensionFilters().add(
+                new FileChooser.ExtensionFilter("Arquivo VCF", "*.vcf")
+        );
+        fileChooser.setInitialFileName("contatos.vcf");
+        Stage stage = (Stage) btnExportar.getScene().getWindow();
+        File arquivo = fileChooser.showSaveDialog(stage);
+        if (arquivo != null) {
+            System.out.println(arquivo.getAbsolutePath());
+        }
     }
 
     @FXML
