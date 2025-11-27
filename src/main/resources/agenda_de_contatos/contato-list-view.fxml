@@ -9,18 +9,45 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.control.TextField?> <AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="agenda_de_contatos.controller.ContatoListController">
+<?import javafx.scene.control.TextField?>
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="agenda_de_contatos.controller.ContatoListController">
     <children>
-        <VBox spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"> <padding>
-            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-        </padding>
+        <VBox spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+              AnchorPane.topAnchor="0.0">
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+            </padding>
             <children>
-                <HBox alignment="CENTER_LEFT" spacing="10.0"> <children>
-                    <Label text="Contatos"> <font> <Font name="System Bold" size="18.0" /> </font> </Label> <HBox HBox.hgrow="ALWAYS" /> <TextField fx:id="searchField" promptText="Pesquisar por nome..." prefWidth="250.0" />
-                </children>
+                <HBox alignment="CENTER_LEFT" spacing="10.0">
+                    <children>
+                        <Label text="Contatos">
+                            <font>
+                                <Font name="System Bold" size="18.0"/>
+                            </font>
+                        </Label>
+                        <HBox HBox.hgrow="ALWAYS"/>
+                        <TextField fx:id="searchField" promptText="Pesquisar por nome..." prefWidth="250.0"/>
+                    </children>
                 </HBox>
 
-                <TableView fx:id="tableView" VBox.vgrow="ALWAYS"> <columns> <TableColumn fx:id="colNome" prefWidth="200.0" text="Nome" /> <TableColumn fx:id="colTelefone" prefWidth="120.0" text="Telefone" /> <TableColumn fx:id="colEmail" prefWidth="150.0" text="Email" /> <TableColumn fx:id="colAcoes" minWidth="180.0" text="Ações" /> </columns> </TableView> <Button mnemonicParsing="false" onAction="#handleAdicionarContato" text=" + Novo Contato" /> <HBox fx:id="statusBar" alignment="CENTER_LEFT" spacing="10" styleClass="status-bar"> <Label fx:id="statusLabel" text="Status: Verificando..." /> <HBox HBox.hgrow="ALWAYS" /> <Button fx:id="syncButton" mnemonicParsing="false" onAction="#handleSincronizar" text="Sincronizar" /> </HBox> </children>
+                <TableView fx:id="tableView" VBox.vgrow="ALWAYS">
+                    <columns>
+                        <TableColumn fx:id="colNome" prefWidth="200.0" text="Nome"/>
+                        <TableColumn fx:id="colTelefone" prefWidth="120.0" text="Telefone"/>
+                        <TableColumn fx:id="colEmail" prefWidth="150.0" text="Email"/>
+                        <TableColumn fx:id="colObservacao" prefWidth="150.0" text="Observação"/>
+                        <TableColumn fx:id="colAcoes" minWidth="180.0" text="Ações"/>
+                    </columns>
+                </TableView>
+                <Button mnemonicParsing="false" onAction="#handleAdicionarContato" text=" + Novo Contato"/>
+                <HBox fx:id="statusBar" alignment="CENTER_LEFT" spacing="10" styleClass="status-bar">
+                    <Label fx:id="statusLabel" text="Status: Verificando..."/>
+                    <HBox HBox.hgrow="ALWAYS"/>
+                    <Button fx:id="syncButton" mnemonicParsing="false" onAction="#handleSincronizar"
+                            text="Sincronizar"/>
+                </HBox>
+            </children>
         </VBox>
     </children>
 </AnchorPane>

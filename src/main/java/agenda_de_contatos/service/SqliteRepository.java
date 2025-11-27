@@ -23,7 +23,8 @@ public class SqliteRepository implements IContatoRepository {
                 + "telefone VARCHAR(255) NOT NULL UNIQUE,"
                 + "dataNasc DATE NULL,"
                 + "email VARCHAR(255) NULL,"
-                + "endereco VARCHAR(255) NULL"
+                + "endereco VARCHAR(255) NULL,"
+                + "observacao VARCHAR(255) NULL"
                 + ");";
 
         try (Connection conn = getConnection();
@@ -52,7 +53,7 @@ public class SqliteRepository implements IContatoRepository {
 
     @Override
     public void adicionarContato(Contato contato) throws SQLException {
-        String sql = "INSERT INTO contatos(nome, telefone, dataNasc, email, endereco) VALUES(?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO contatos(nome, telefone, dataNasc, email, endereco, observacao) VALUES(?, ?, ?, ?, ?, ?)";
         try (Connection conn = getConnection();
              PreparedStatement stmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
             RepositoryMapper.mapContatoToStatement(stmt, contato);
@@ -67,7 +68,7 @@ public class SqliteRepository implements IContatoRepository {
 
     @Override
     public void atualizarContato(Contato contato) throws SQLException {
-        String sql = "UPDATE contatos SET nome = ?, telefone = ?, dataNasc = ?, email = ?, endereco = ? WHERE id = ?";
+        String sql = "UPDATE contatos SET nome = ?, telefone = ?, dataNasc = ?, email = ?, endereco = ?, observacao = ? WHERE id = ?";
         try (Connection conn = getConnection();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
             RepositoryMapper.mapContatoToStatement(stmt, contato);
