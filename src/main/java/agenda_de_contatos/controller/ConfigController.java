@@ -1,3 +1,4 @@
+
 package agenda_de_contatos.controller;
 
 import agenda_de_contatos.MainApplication;
@@ -16,6 +17,15 @@ import java.util.Map;
 
 public class ConfigController {
     public Button btnButtonDrak;
+    public Button btnBorderOrange;
+    public Button btnBorderPink;
+    public Button btnSidebarPink;
+    public Button btnBgPink;
+    public Button btnFontWhiteWhite;
+    public Button btnFonteDark;
+    public Button btnFontBrown;
+    public Button btnFontRed;
+    public Button btnSidebarOrange;
     //iniciar botoes//
     @FXML private ChoiceBox<String> storageChoiceBox;
     @FXML private TextField hostField;
@@ -97,6 +107,24 @@ public class ConfigController {
     @FXML private Button btnSidebarDefault;
     @FXML private Button btnSidebarRoxoNubank;
 
+    @FXML private Button btnBorderBlack;
+    @FXML private Button btnBorderCian;
+    @FXML private Button btnBorderLight;
+    @FXML private Button btnBorderDark;
+    @FXML private Button btnBorderBlue;
+    @FXML private Button btnBorderPurple;
+    @FXML private Button btnBorderMagenta;
+    @FXML private Button btnBorderYellow;
+    @FXML private Button btnBorderRed;
+    @FXML private Button btnBorderGreen;
+    @FXML private Button btnBorderBrown;
+    @FXML private Button btnBorderNubank;
+    @FXML private Button btnBorderBlack2;
+    @FXML private Button btnBorderDrak;
+    @FXML private Button btnBorderBlueDark;
+    @FXML private Button btnBorderDefault;
+    @FXML private Button btnBorderRoxoNubank;
+
 
     @FXML private Button btnTxtBrown;
     @FXML private Button btnTxtRed;
@@ -110,8 +138,8 @@ public class ConfigController {
     private Map<String, Button> fontButtons = new HashMap<>();
     private Map<String, Button> buttonButtons = new HashMap<>();
     private Map<String, Button> backgroundButtons = new HashMap<>();
-
     private Map<String, Button> sidebarButtons = new HashMap<>();
+    private Map<String, Button> borderButtons = new HashMap<>();
 
 
     public void setMainController(MainController mainController) {
@@ -257,6 +285,26 @@ public class ConfigController {
         sidebarButtons.put(ConfigService. COLOR_SIDEBAR_BLUE, btnSidebarBlue);
         sidebarButtons.put(ConfigService. COLOR_SIDEBAR_BLUEDARK, btnSidebarBlueDark);
         sidebarButtons.put(ConfigService. COLOR_SIDEBAR_ROXONUBANK, btnSidebarRoxoNubank);
+
+        //Border
+
+        borderButtons.put(ConfigService. COLOR_BORDER_DEFAULT, btnBorderDefault);
+        borderButtons.put(ConfigService.COLOR_BORDER_PURPLE, btnBorderPurple);
+        borderButtons.put(ConfigService. COLOR_BORDER_MAGENTA, btnBorderMagenta);
+        borderButtons.put(ConfigService.COLOR_BORDER_GREEN, btnBorderGreen);
+        borderButtons.put(ConfigService.COLOR_BORDER_NUBANK, btnBorderNubank);
+        borderButtons.put(ConfigService.COLOR_BORDER_PINK, btnBorderPurple);
+        borderButtons.put(ConfigService. COLOR_BORDER_RED, btnBorderRed);
+        borderButtons.put(ConfigService. COLOR_BORDER_BROWN, btnBorderBrown);
+        borderButtons.put(ConfigService. COLOR_BORDER_CIANO, btnBorderCian);
+        borderButtons.put(ConfigService. COLOR_BORDER_BLACK, btnBorderBlack);
+        borderButtons.put(ConfigService. COLOR_BORDER_YELLOW, btnBorderYellow);
+        borderButtons.put(ConfigService. COLOR_BORDER_DRAK, btnBorderDark);
+        borderButtons.put(ConfigService. COLOR_BORDER_LIGHT, btnBorderLight);
+        borderButtons.put(ConfigService. COLOR_BORDER_DARK, btnBorderDark);
+        borderButtons.put(ConfigService. COLOR_BORDER_BLUE, btnBorderBlue);
+        borderButtons.put(ConfigService. COLOR_BORDER_BLUEDARK, btnBorderBlueDark);
+        borderButtons.put(ConfigService. COLOR_BORDER_ROXONUBANK, btnBorderRoxoNubank);
     }
 
     private void loadAndApplyCurrentThemeSelection() {
@@ -264,6 +312,7 @@ public class ConfigController {
         updateButtonSelection(buttonButtons, configService.getButtonColor());
         updateButtonSelection(backgroundButtons, configService.getBackgroundColor());
         updateButtonSelection(sidebarButtons, configService.getSidebarColor());
+        updateButtonSelection(borderButtons, configService.getBorderColor());
     }
 
     @FXML
@@ -298,6 +347,10 @@ public class ConfigController {
             case "sidebar":
                 configService.setSidebarColor(colorValue);
                 currentGroup = sidebarButtons;
+                break;
+            case "border":
+                configService.setBorderColor(colorValue);
+                currentGroup = borderButtons;
                 break;
 
             default:
