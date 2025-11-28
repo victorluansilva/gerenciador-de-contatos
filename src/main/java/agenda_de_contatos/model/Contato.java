@@ -28,6 +28,7 @@ public class Contato {
         this.endereco = endereco;
         this.email = email;
         this.observacao = observacao;
+        this.observacao = "";
     }
 
     public int getId() {
@@ -44,6 +45,14 @@ public class Contato {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getObservacao() {
+        return observacao;
+    }
+
+    public void setObservacao(String observacao) {
+        this.observacao = observacao;
     }
 
     public String getTelefone() {
