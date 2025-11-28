@@ -133,7 +133,7 @@ public class ContatoListController {
         colAcoes.setCellFactory(param -> new TableCell<>() {
             private final Button btnEditar = new Button("Editar");
             private final Button btnExcluir = new Button("Excluir");
-            private final HBox pane = new HBox(5, btnEditar, btnExcluir);
+            private final HBox pane = new HBox(6, btnEditar, btnExcluir);
 
             {
                 btnEditar.setOnAction(event -> {

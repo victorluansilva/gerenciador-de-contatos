@@ -21,12 +21,13 @@ public class Contato {
         this.observacao = "";
     }
 
-    public Contato(String nome, String telefone, LocalDate dataNasc, String endereco, String email) {
+    public Contato(String nome, String telefone, LocalDate dataNasc, String endereco, String email, String observacao) {
         this.nome = nome;
         this.telefone = telefone;
         this.dataNasc = dataNasc;
         this.endereco = endereco;
         this.email = email;
+        this.observacao = observacao;
         this.observacao = "";
     }
 
@@ -84,5 +85,13 @@ public class Contato {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getObservacao() {
+        return this.observacao;
+    }
+
+    public void setObservacao(String observacao) {
+        this.observacao = observacao;
     }
 }

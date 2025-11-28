@@ -45,7 +45,7 @@ public class MysqlRepository implements IContatoRepository {
 
     @Override
     public void adicionarContato(Contato contato) throws SQLException {
-        String sql = "INSERT INTO contatos(nome, telefone, dataNasc, email, endereco) VALUES(?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO contatos(nome, telefone, dataNasc, email, endereco, observacao) VALUES(?, ?, ?, ?, ?, ?)";
         try (Connection conn = getConnection();
              PreparedStatement stmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
             mapContatoToStatement(stmt, contato);
@@ -60,7 +60,7 @@ public class MysqlRepository implements IContatoRepository {
 
     @Override
     public void atualizarContato(Contato contato) throws SQLException {
-        String sql = "UPDATE contatos SET nome = ?, telefone = ?, dataNasc = ?, email = ?, endereco = ? WHERE id = ?";
+        String sql = "UPDATE contatos SET nome = ?, telefone = ?, dataNasc = ?, email = ?, endereco = ?, observacao = ?, WHERE id = ?";
         try (Connection conn = getConnection();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
             mapContatoToStatement(stmt, contato);
@@ -99,6 +99,7 @@ public class MysqlRepository implements IContatoRepository {
         }
         contato.setEmail(rs.getString("email"));
         contato.setEndereco(rs.getString("endereco"));
+        contato.setObservacao(rs.getString("observacao"));
         return contato;
     }
 
@@ -112,5 +113,6 @@ public class MysqlRepository implements IContatoRepository {
         }
         stmt.setString(4, contato.getEmail());
         stmt.setString(5, contato.getEndereco());
+        stmt.setString(6, contato.getObservacao());
     }
 }

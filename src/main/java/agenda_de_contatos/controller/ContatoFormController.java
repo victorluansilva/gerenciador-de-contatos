@@ -51,6 +51,7 @@ public class ContatoFormController {
             }
             emailField.setText(contato.getEmail());
             enderecoField.setText(contato.getEndereco());
+            observacaoField.setText(contato.getObservacao());
         } else {
             titleLabel.setText("Adicionar Novo Contato");
         }
@@ -119,6 +120,7 @@ public class ContatoFormController {
         }
         contato.setEmail(emailField.getText().trim());
         contato.setEndereco(enderecoField.getText().trim());
+        contato.setObservacao(observacaoField.getText().trim());
 
         if (isNew) {
             contatoService.adicionarContato(contato);
