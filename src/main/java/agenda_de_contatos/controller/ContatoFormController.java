@@ -44,13 +44,13 @@ public class ContatoFormController {
         if (contato != null) {
             titleLabel.setText("Editar Contato");
             nomeField.setText(contato.getNome());
-            observacaoField.setText(contato.getObservacao());
             telefoneField.setText(contato.getTelefone());
             if (contato.getDataNascimento() != null) {
                 dataNascPicker.setValue(contato.getDataNascimento());
             }
             emailField.setText(contato.getEmail());
             enderecoField.setText(contato.getEndereco());
+            observacaoField.setText(contato.getObservacao());
         } else {
             titleLabel.setText("Adicionar Novo Contato");
         }
@@ -119,6 +119,7 @@ public class ContatoFormController {
         }
         contato.setEmail(emailField.getText().trim());
         contato.setEndereco(enderecoField.getText().trim());
+        contato.setObservacao(observacaoField.getText().trim());
 
         if (isNew) {
             contatoService.adicionarContato(contato);

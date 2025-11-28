@@ -19,6 +19,7 @@ public class RepositoryMapper {
         }
         contato.setEmail(rs.getString("email"));
         contato.setEndereco(rs.getString("endereco"));
+        contato.setObservacao(rs.getString("observacao"));
         return contato;
     }
 
@@ -32,5 +33,6 @@ public class RepositoryMapper {
         }
         stmt.setString(4, contato.getEmail());
         stmt.setString(5, contato.getEndereco());
+        stmt.setString(6, contato.getObservacao());
     }
 }
