@@ -60,7 +60,7 @@ public class MysqlRepository implements IContatoRepository {
 
     @Override
     public void atualizarContato(Contato contato) throws SQLException {
-        String sql = "UPDATE contatos SET nome = ?, telefone = ?, dataNasc = ?, email = ?, endereco = ?, observacao = ? WHERE id = ?";
+        String sql = "UPDATE contatos SET nome = ?, telefone = ?, dataNasc = ?, email = ?, endereco = ?, observacao = ?, WHERE id = ?";
         try (Connection conn = getConnection();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
             mapContatoToStatement(stmt, contato);

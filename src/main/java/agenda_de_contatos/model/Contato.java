@@ -46,14 +46,6 @@ public class Contato {
         this.nome = nome;
     }
 
-    public String getObservacao() {
-        return observacao;
-    }
-
-    public void setObservacao(String observacao) {
-        this.observacao = observacao;
-    }
-
     public String getTelefone() {
         return telefone;
     }
@@ -84,5 +76,13 @@ public class Contato {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getObservacao() {
+        return this.observacao;
+    }
+
+    public void setObservacao(String observacao) {
+        this.observacao = observacao;
     }
 }
